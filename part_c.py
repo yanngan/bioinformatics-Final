@@ -1,41 +1,42 @@
+from Bio import Entrez, SeqIO, pairwise2
+from Bio.pairwise2 import format_alignment
+
+
+gencode = {
+    'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M',
+    'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T',
+    'AAC':'N', 'AAT':'N', 'AAA':'K', 'AAG':'K',
+    'AGC':'S', 'AGT':'S', 'AGA':'R', 'AGG':'R',
+    'CTA':'L', 'CTC':'L', 'CTG':'L', 'CTT':'L',
+    'CCA':'P', 'CCC':'P', 'CCG':'P', 'CCT':'P',
+    'CAC':'H', 'CAT':'H', 'CAA':'Q', 'CAG':'Q',
+    'CGA':'R', 'CGC':'R', 'CGG':'R', 'CGT':'R',
+    'GTA':'V', 'GTC':'V', 'GTG':'V', 'GTT':'V',
+    'GCA':'A', 'GCC':'A', 'GCG':'A', 'GCT':'A',
+    'GAC':'D', 'GAT':'D', 'GAA':'E', 'GAG':'E',
+    'GGA':'G', 'GGC':'G', 'GGG':'G', 'GGT':'G',
+    'TCA':'S', 'TCC':'S', 'TCG':'S', 'TCT':'S',
+    'TTC':'F', 'TTT':'F', 'TTA':'L', 'TTG':'L',
+    'TAC':'Y', 'TAT':'Y', 'TAA':'_', 'TAG':'_',
+    'TGC':'C', 'TGT':'C', 'TGA':'_', 'TGG':'W'}
 
 
 
 import tools
-def cross_reference_GB_UniProt(UniProt_file_path, GB_file_path):
-    '''
-    Making Cross-reference between UniProt and GB
-    the Cross-reference is based on 'GOA' id
-    print a report of the Cross-reference
-    :param UniProt_file_path: the path to the UniProt file
-    :param GB_file_path: the path to the GB file
-    :return: nothing
-    '''
-    uniprot_protein_dictionary = tools.get_dictionary_of_protain_UniProt_file(UniProt_file_path)
-    gb_protein_dictionary = tools.get_dictionary_of_protain_from_GB_file(GB_file_path)
+def open_GB( GB_file_path):
 
-    count_uniprot_in_gb = 0
-    for key, val in uniprot_protein_dictionary.items():
-        if key in gb_protein_dictionary:
-            count_uniprot_in_gb += 1
+    gb_protein_dictionary = tools.import_data_from_DB_file(GB_file_path)
+    return  gb_protein_dictionary[0].sequence
 
-    count_gb_in_uniprot = 0
-    for key, val in gb_protein_dictionary.items():
-        if key in uniprot_protein_dictionary:
-            count_gb_in_uniprot += 1
+# def main_c():
+#     print("in c")
+#     #a    ----->
+#     open_GB("corona_2020.gb")
+#     print(count_mutation_by_type(1,"synonymous"))
 
-    print("---------count uniprot in gb--------")
-    print("count_uniprot_in_gb = " + str(count_uniprot_in_gb))
-    print("uniprot len = " + str(len(uniprot_protein_dictionary)))
 
-    print("---------count gb in uniprot--------")
-    print("count_gb_in_uniprot = " + str(count_gb_in_uniprot))
-    print("gb len = " + str(len(gb_protein_dictionary)))
+print("in c")
+#a    ----->
+data=open_GB("corona_2020.gb")
 
-def main_c():
-    print("in c")
-    # ------ b.a ------
-    cross_reference_GB_UniProt("uniprot-organism Bacillus+subtilis+(strain+168)+[224308] .fasta", "corona_2020.gb.gb")
-    # ------ b.b ------
-    print(str(tools.get_transmembrane_from_UniProt_file("uniprot-organism Bacillus+subtilis+(strain+168)+[224308] .fasta")))
 
