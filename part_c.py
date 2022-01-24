@@ -1,6 +1,17 @@
 from Bio import Entrez, SeqIO, pairwise2
 from Bio.pairwise2 import format_alignment
+genetic_code=""
 
+def NewCode(currentCode, changeAT):
+    nextlatter = nextLatter[currentCode[changeAT]]
+    currentCode = currentCode[0:changeAT] + nextlatter + currentCode[changeAT + 1:3]
+    return currentCode
+    pass
+
+
+nextLatter={
+    'A':'C', 'C':'G', 'G':'T', 'T':'A'
+}
 
 gencode = {
     'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M',
@@ -33,10 +44,45 @@ def open_GB( GB_file_path):
 #     #a    ----->
 #     open_GB("corona_2020.gb")
 #     print(count_mutation_by_type(1,"synonymous"))
+def countSismogramAt(kodon):
+    count=0
+    #first latter
+    if gencode[kodon]==gencode[kodon[0:2]+nextLatter[kodon[2]]]:
+        count += 1
+    if gencode[kodon]==gencode[kodon[0:2]+nextLatter[nextLatter[kodon[2]]]]:
+        count += 1
+    if gencode[kodon]==gencode[kodon[0:2]+nextLatter[nextLatter[nextLatter[kodon[2]]]]]:
+        count+=1
 
+    #sec latter
+    if gencode[kodon]==gencode[kodon[0:1]+nextLatter[kodon[1]]+kodon[2]]:
+        count += 1
+    if gencode[kodon]==gencode[kodon[0:1]+nextLatter[nextLatter[kodon[1]]]+kodon[2]]:
+        count += 1
+    if gencode[kodon]==gencode[kodon[0:1]+nextLatter[nextLatter[nextLatter[kodon[1]]]]+kodon[2]]:
+        count+=1
+
+    #third latter
+    if gencode[kodon]==gencode[nextLatter[kodon[0]]+kodon[1:3]]:
+        count += 1
+    if gencode[kodon]==gencode[nextLatter[nextLatter[kodon[0]]]+kodon[1:3]]:
+        count += 1
+    if gencode[kodon]==gencode[nextLatter[nextLatter[nextLatter[kodon[0]]]]+kodon[1:3]]:
+        count+=1
+
+    return count
+
+def countSismogram(DATA):
+    dic={}
+    print(len(DATA))
+    for i in range(int(len(DATA)/3)):
+        dic[i]=countSismogramAt(DATA[3*i:3*i+3])
+    return dic
 
 print("in c")
 #a    ----->
 data=open_GB("corona_2020.gb")
-
+print(data)
+dic=countSismogram(data)
+print(dic)
 
