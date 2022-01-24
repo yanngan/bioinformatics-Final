@@ -1,12 +1,14 @@
 from Bio import Entrez, SeqIO, pairwise2
 from Bio.pairwise2 import format_alignment
-genetic_code=""
 
-def NewCode(currentCode, changeAT):
-    nextlatter = nextLatter[currentCode[changeAT]]
-    currentCode = currentCode[0:changeAT] + nextlatter + currentCode[changeAT + 1:3]
-    return currentCode
-    pass
+
+
+
+# def NewCode(currentCode, changeAT):
+#     nextlatter = nextLatter[currentCode[changeAT]]
+#     currentCode = currentCode[0:changeAT] + nextlatter + currentCode[changeAT + 1:3]
+#     return currentCode
+#     pass
 
 
 nextLatter={
@@ -79,10 +81,64 @@ def countSismogram(DATA):
         dic[i]=countSismogramAt(DATA[3*i:3*i+3])
     return dic
 
-print("in c")
-#a    ----->
-data=open_GB("corona_2020.gb")
-print(data)
-dic=countSismogram(data)
+
+
+def addGaps(seq1, seq2):
+    alignment = pairwise2.align.globalxx(seq1, seq2)[0]
+    return alignment.seqA,alignment.seqB,alignment.score
+    pass
+
+
+def OnlyInFirst(seq1,seq2):
+    newGens={}
+    for i in range(len(seq1)):
+        if seq2[i]=='-':
+            newGens[i]=seq1[i]
+    return newGens
+    pass
+def compare(first_RNA,sec_RNA):
+    pass
+
+
+def getNumberOfEqual(howMany,seqA,seqB):
+    dic={}
+    for i in range(len(seqA)):
+        if howMany==0:
+            i=len(seqA)
+            break
+        if seqA[i]==seqB[i]:
+            dic[i]=seqA[i]
+            howMany-=1
+    return dic
+def calculateDNDS(gen):
+    pass
+# def main_b():
+#     print("in c")
+#     #a    ----->
+#     data=open_GB("corona_2020.gb")
+#     dic=countSismogram(data)
+#     print(dic)
+#     #b    ----->
+#
+data_corona=open_GB("corona_2020.gb")
+print(data_corona)
+dic=countSismogram(data_corona)
 print(dic)
 
+data_corona_recent=open_GB("corona_2022.gb")
+TESTA="AGAAAAAGGG"
+TESTB="AAAAAAGGGG"
+
+corona_2020,corona_2022,score=addGaps(TESTA,TESTB)
+print(corona_2020,corona_2022)
+corona_2020_old_gens=OnlyInFirst(corona_2020,corona_2022)
+corona_2022_new_gens=OnlyInFirst(corona_2022,corona_2020)
+print(corona_2020_old_gens)
+print(corona_2022_new_gens)
+equal_gens=getNumberOfEqual(5,corona_2020,corona_2022)
+print(equal_gens)
+dnds_dic={}
+for gen in equal_gens:
+    dnds_dic[gen]=calculateDNDS(gen)
+
+matches,additional_gens=compare(corona_2020,corona_2022)
