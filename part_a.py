@@ -126,7 +126,8 @@ def getAllGeneLength(ftrs):
 
 def main_a():
     print("in a")
-        # read gb file and get the features
+
+    # read gb file and get the features
     file = "BS168.gb"
     record_gb = readGBFile("BS168.gb")
     features = record_gb.features
