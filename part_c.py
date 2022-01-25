@@ -1,6 +1,6 @@
 from Bio import Entrez, SeqIO, pairwise2
 from Bio.pairwise2 import format_alignment
-
+from Bio.codonalign.codonseq import CodonSeq, cal_dn_ds
 
 
 
@@ -89,7 +89,7 @@ def addGaps(seq1, seq2):
     pass
 
 
-def OnlyInFirst(seq1,seq2):
+def OnlyInFirst(gen,seq1,seq2):
     newGens={}
     for i in range(len(seq1)):
         if seq2[i]=='-':
@@ -110,8 +110,15 @@ def getNumberOfEqual(howMany,seqA,seqB):
             dic[i]=seqA[i]
             howMany-=1
     return dic
-def calculateDNDS(gen):
+def calculateDNDS(seqA,seqB):
+    dN, dS=cal_dn_ds(seqA,seqB)
+    dN_dS_ratio= float(dN,dS)
+    return dN,dS,dN_dS_ratio
     pass
+def findGenFrom(start,seq):
+    index=findAUG(seq[start:])
+    pass
+
 # def main_b():
 #     print("in c")
 #     #a    ----->
@@ -126,19 +133,29 @@ dic=countSismogram(data_corona)
 print(dic)
 
 data_corona_recent=open_GB("corona_2022.gb")
-TESTA="AGAAAAAGGG"
-TESTB="AAAAAAGGGG"
+TESTA="ACG"
+TESTB="AAG"
 
 corona_2020,corona_2022,score=addGaps(TESTA,TESTB)
-print(corona_2020,corona_2022)
+print(corona_2020,corona_2022,score)
 corona_2020_old_gens=OnlyInFirst(corona_2020,corona_2022)
 corona_2022_new_gens=OnlyInFirst(corona_2022,corona_2020)
 print(corona_2020_old_gens)
 print(corona_2022_new_gens)
 equal_gens=getNumberOfEqual(5,corona_2020,corona_2022)
+gens={}
+From_2020=0
+From_2022=0
+for i in range(len(corona_2020)):
+    genA,From_2020=findGenFrom(From_2020,corona_2020)
+    genB,From_2022=findGenFrom(From_2022,corona_2020)
+    gens[i]=[genA,genB]
+
+
 print(equal_gens)
 dnds_dic={}
-for gen in equal_gens:
-    dnds_dic[gen]=calculateDNDS(gen)
+for i in range(gens):
+    dN,dS,dN_dS_ratio=calculateDNDS(gens[i][0],gens[i][1])
+    dnds_dic[i]=[dN,dS,dN_dS_ratio]
 
 matches,additional_gens=compare(corona_2020,corona_2022)
