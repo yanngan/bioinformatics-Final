@@ -3,6 +3,8 @@ from Bio.pairwise2 import format_alignment
 from Bio.codonalign.codonseq import CodonSeq, cal_dn_ds
 import tools
 
+
+#--------------------------------------global values-------------------------------------#
 nextLatter={
     'A':'C', 'C':'G', 'G':'T', 'T':'A'
 }
@@ -26,7 +28,9 @@ gencode = {
     'TGC':'C', 'TGT':'C', 'TGA':'_', 'TGG':'W'}
 
 
-
+#.........................................................................................#
+#.........................................................................................#
+#-----------------------------------------------------------------------------------------#
 
 
 
@@ -36,6 +40,10 @@ def open_GB( GB_file_path):
 
 def get_sequence(GB_file_path):
     return  GB_file_path[0].sequence
+
+def get_protain(GB_file_path):
+    notNeededA,notNeededB,genens=tools.get_dictionary_of_protain_from_GB_file(GB_file_path)
+    return genens
 #------------------------------------------A----------------------------------------------#
 
 def countSynonymsAt(kodon):
@@ -76,10 +84,6 @@ def countSynonyms(DATA):
 
 #.........................................................................................#
 #.........................................................................................#
-#-----------------------------------------------------------------------------------------#
-
-
-
 #------------------------------------------B.a----------------------------------------------#
 def addGaps(seq1, seq2):
     alignment = pairwise2.align.globalxx(seq1, seq2)[0]
@@ -123,6 +127,8 @@ def findGenFrom(start,seq):
 
 
 #.........................................................................................#
+#.........................................................................................#
+#.........................................................................................#
 #-----------------------------------------------------------------------------------------#
 
 #load files
@@ -134,6 +140,9 @@ dic=countSynonyms(get_sequence(data_corona))
 print(dic)
 
 #     b    ----->
+protains_2020=get_protain("BS168.gb")
+protains_2022=get_protain("corona_2022.gb")
+print(protains_2020)
 
 
 
@@ -166,41 +175,41 @@ print(corona_2022_new_gens)
 #     print(dic)
 #     #b    ----->
 #
-data_corona=open_GB("corona_2020.gb")
-print(data_corona)
-
-print(dic)
-
-def main_c():
-    data_corona=open_GB("corona_2020.gb")
-    print(data_corona)
-    dic=countSismogram(data_corona)
-    print(dic)
-
-    data_corona_recent=open_GB("corona_2022.gb")
-    TESTA="ACG"
-    TESTB="AAG"
-
-    corona_2020,corona_2022,score=addGaps(TESTA,TESTB)
-    print(corona_2020,corona_2022,score)
-    corona_2020_old_gens=OnlyInFirst(corona_2020,corona_2022)
-    corona_2022_new_gens=OnlyInFirst(corona_2022,corona_2020)
-    print(corona_2020_old_gens)
-    print(corona_2022_new_gens)
-    equal_gens=getNumberOfEqual(5,corona_2020,corona_2022)
-    gens={}
-    From_2020=0
-    From_2022=0
-    for i in range(len(corona_2020)):
-        genA,From_2020=findGenFrom(From_2020,corona_2020)
-        genB,From_2022=findGenFrom(From_2022,corona_2020)
-        gens[i]=[genA,genB]
-
-
-    print(equal_gens)
-    dnds_dic={}
-    for i in range(gens):
-        dN,dS,dN_dS_ratio=calculateDNDS(gens[i][0],gens[i][1])
-        dnds_dic[i]=[dN,dS,dN_dS_ratio]
-
-    matches,additional_gens=compare(corona_2020,corona_2022)
+# data_corona=open_GB("corona_2020.gb")
+# print(data_corona)
+#
+# print(dic)
+#
+# def main_c():
+#     data_corona=open_GB("corona_2020.gb")
+#     print(data_corona)
+#     dic=countSismogram(data_corona)
+#     print(dic)
+#
+#     data_corona_recent=open_GB("corona_2022.gb")
+#     TESTA="ACG"
+#     TESTB="AAG"
+#
+#     corona_2020,corona_2022,score=addGaps(TESTA,TESTB)
+#     print(corona_2020,corona_2022,score)
+#     corona_2020_old_gens=OnlyInFirst(corona_2020,corona_2022)
+#     corona_2022_new_gens=OnlyInFirst(corona_2022,corona_2020)
+#     print(corona_2020_old_gens)
+#     print(corona_2022_new_gens)
+#     equal_gens=getNumberOfEqual(5,corona_2020,corona_2022)
+#     gens={}
+#     From_2020=0
+#     From_2022=0
+#     for i in range(len(corona_2020)):
+#         genA,From_2020=findGenFrom(From_2020,corona_2020)
+#         genB,From_2022=findGenFrom(From_2022,corona_2020)
+#         gens[i]=[genA,genB]
+#
+#
+#     print(equal_gens)
+#     dnds_dic={}
+#     for i in range(gens):
+#         dN,dS,dN_dS_ratio=calculateDNDS(gens[i][0],gens[i][1])
+#         dnds_dic[i]=[dN,dS,dN_dS_ratio]
+#
+#     matches,additional_gens=compare(corona_2020,corona_2022)
