@@ -38,7 +38,7 @@ def digGeneName(gene):
     try:
       return  gene.qualifiers['gene'][0]
     except:
-        print("missing gene name")
+        #print("missing gene name")
         return ""
 
 
@@ -159,12 +159,10 @@ def main_a():
 
     coding_data = createDataFrame(coding_data, ['name', 'start', 'end', 'strand', 'avg'])
     d = coding_data.sort_values(by=['avg'])
-    print(d)
+    #print(d)
 
     print(GC_avg)
 
     # plot  GC histogram of coding gene
 
     plotHistograms1(GC_list, 'coding DNA GC hist')
-
-main_a()
