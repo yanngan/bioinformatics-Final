@@ -63,7 +63,7 @@ def get_dictionary_of_protain_from_GB_file(file_path):
             if seq_feature.type == "CDS":
                 assert len(seq_feature.qualifiers['translation']) == 1
                 count_entry += 1
-                if any("GOA" in s for s in seq_feature.qualifiers['db_xref']):
+                if 'db_xref' in seq_feature.qualifiers and any("GOA" in s for s in seq_feature.qualifiers['db_xref']):
                     GOA_dictionary_to_return[seq_feature.qualifiers['db_xref'][2].split(":")[1]] = seq_feature.qualifiers['translation'][0]
                 if seq_feature.qualifiers.get('gene') != None:
                     Name_dictionary_to_return[seq_feature.qualifiers.get('gene')[0]] = seq_feature.qualifiers['translation'][0]
