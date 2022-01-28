@@ -86,8 +86,6 @@ def get_transmembrane_from_UniProt_file(fasta_path):
     return GOA_dictionary_to_return,Name_dictionary_to_return
 
 
-
-
 def get_GC_and_len_statistic(dic,GC_count,global_len):
     #   avg
     dic_len_avg = 0
