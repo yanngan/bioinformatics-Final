@@ -1,15 +1,7 @@
 from Bio import Entrez, SeqIO, pairwise2
 from Bio.pairwise2 import format_alignment
 from Bio.codonalign.codonseq import CodonSeq, cal_dn_ds
-
-
-
-# def NewCode(currentCode, changeAT):
-#     nextlatter = nextLatter[currentCode[changeAT]]
-#     currentCode = currentCode[0:changeAT] + nextlatter + currentCode[changeAT + 1:3]
-#     return currentCode
-#     pass
-
+import tools
 
 nextLatter={
     'A':'C', 'C':'G', 'G':'T', 'T':'A'
@@ -35,20 +27,20 @@ gencode = {
 
 
 
-import tools
+
+
+
+#--------------------------------------load data------------------------------------------#
 def open_GB( GB_file_path):
+    return tools.import_data_from_DB_file(GB_file_path)
 
-    gb_protein_dictionary = tools.import_data_from_DB_file(GB_file_path)
-    return  gb_protein_dictionary[0].sequence
+def get_sequence(GB_file_path):
+    return  GB_file_path[0].sequence
+#------------------------------------------A----------------------------------------------#
 
-# def main_c():
-#     print("in c")
-#     #a    ----->
-#     open_GB("corona_2020.gb")
-#     print(count_mutation_by_type(1,"synonymous"))
-def countSismogramAt(kodon):
+def countSynonymsAt(kodon):
+    # count a certain unit how many synonyms he has
     count=0
-    #first latter
     if gencode[kodon]==gencode[kodon[0:2]+nextLatter[kodon[2]]]:
         count += 1
     if gencode[kodon]==gencode[kodon[0:2]+nextLatter[nextLatter[kodon[2]]]]:
@@ -74,15 +66,21 @@ def countSismogramAt(kodon):
 
     return count
 
-def countSismogram(DATA):
+def countSynonyms(DATA):
     dic={}
     print(len(DATA))
     for i in range(int(len(DATA)/3)):
-        dic[i]=countSismogramAt(DATA[3*i:3*i+3])
+        # check each unit how many Synonyms he has
+        dic[i]=countSynonymsAt(DATA[3*i:3*i+3])
     return dic
 
+#.........................................................................................#
+#.........................................................................................#
+#-----------------------------------------------------------------------------------------#
 
 
+
+#------------------------------------------B.a----------------------------------------------#
 def addGaps(seq1, seq2):
     alignment = pairwise2.align.globalxx(seq1, seq2)[0]
     return alignment.seqA,alignment.seqB,alignment.score
@@ -119,6 +117,47 @@ def findGenFrom(start,seq):
     index=findAUG(seq[start:])
     pass
 
+#.........................................................................................#
+#------------------------------------------B.b----------------------------------------------#
+
+
+
+#.........................................................................................#
+#-----------------------------------------------------------------------------------------#
+
+#load files
+data_corona=open_GB("corona_2020.gb")
+data_corona_recent=open_GB("corona_2022.gb")
+
+#     a    ----->
+dic=countSynonyms(get_sequence(data_corona))
+print(dic)
+
+#     b    ----->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+corona_2020,corona_2022,score=addGaps(TESTA,TESTB)
+corona_2020_old_gens=OnlyInFirst(corona_2020,corona_2022)
+corona_2022_new_gens=OnlyInFirst(corona_2022,corona_2020)
+print("they have ",score," amount of gen")
+print(corona_2020_old_gens)
+print(corona_2022_new_gens)
+
 # def main_b():
 #     print("in c")
 #     #a    ----->
@@ -127,6 +166,10 @@ def findGenFrom(start,seq):
 #     print(dic)
 #     #b    ----->
 #
+data_corona=open_GB("corona_2020.gb")
+print(data_corona)
+
+print(dic)
 
 def main_c():
     data_corona=open_GB("corona_2020.gb")
