@@ -171,30 +171,36 @@ print(data_corona)
 
 print(dic)
 
-data_corona_recent=open_GB("corona_2022.gb")
-TESTA="ACG"
-TESTB="AAG"
+def main_c():
+    data_corona=open_GB("corona_2020.gb")
+    print(data_corona)
+    dic=countSismogram(data_corona)
+    print(dic)
 
-corona_2020,corona_2022,score=addGaps(TESTA,TESTB)
-print(corona_2020,corona_2022,score)
-corona_2020_old_gens=OnlyInFirst(corona_2020,corona_2022)
-corona_2022_new_gens=OnlyInFirst(corona_2022,corona_2020)
-print(corona_2020_old_gens)
-print(corona_2022_new_gens)
-equal_gens=getNumberOfEqual(5,corona_2020,corona_2022)
-gens={}
-From_2020=0
-From_2022=0
-for i in range(len(corona_2020)):
-    genA,From_2020=findGenFrom(From_2020,corona_2020)
-    genB,From_2022=findGenFrom(From_2022,corona_2020)
-    gens[i]=[genA,genB]
+    data_corona_recent=open_GB("corona_2022.gb")
+    TESTA="ACG"
+    TESTB="AAG"
+
+    corona_2020,corona_2022,score=addGaps(TESTA,TESTB)
+    print(corona_2020,corona_2022,score)
+    corona_2020_old_gens=OnlyInFirst(corona_2020,corona_2022)
+    corona_2022_new_gens=OnlyInFirst(corona_2022,corona_2020)
+    print(corona_2020_old_gens)
+    print(corona_2022_new_gens)
+    equal_gens=getNumberOfEqual(5,corona_2020,corona_2022)
+    gens={}
+    From_2020=0
+    From_2022=0
+    for i in range(len(corona_2020)):
+        genA,From_2020=findGenFrom(From_2020,corona_2020)
+        genB,From_2022=findGenFrom(From_2022,corona_2020)
+        gens[i]=[genA,genB]
 
 
-print(equal_gens)
-dnds_dic={}
-for i in range(gens):
-    dN,dS,dN_dS_ratio=calculateDNDS(gens[i][0],gens[i][1])
-    dnds_dic[i]=[dN,dS,dN_dS_ratio]
+    print(equal_gens)
+    dnds_dic={}
+    for i in range(gens):
+        dN,dS,dN_dS_ratio=calculateDNDS(gens[i][0],gens[i][1])
+        dnds_dic[i]=[dN,dS,dN_dS_ratio]
 
-matches,additional_gens=compare(corona_2020,corona_2022)
+    matches,additional_gens=compare(corona_2020,corona_2022)
