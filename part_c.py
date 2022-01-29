@@ -1,8 +1,9 @@
 from Bio import Entrez, SeqIO, pairwise2
+from Bio.Seq import Seq
 from Bio.pairwise2 import format_alignment
 from Bio.codonalign.codonseq import CodonSeq, cal_dn_ds
 import tools
-
+from tabulate import tabulate
 
 #--------------------------------------global values-------------------------------------#
 nextLatter={
@@ -42,8 +43,8 @@ def get_sequence(GB_file_path):
     return  GB_file_path[0].sequence
 
 def get_protain(GB_file_path):
-    notNeededA,notNeededB,genens=tools.get_dictionary_of_protain_from_GB_file(GB_file_path)
-    return genens
+    GOA_dictionary_to_return,Name_dictionary_to_return,all_protein=tools.get_dictionary_of_protain_from_GB_file(GB_file_path)
+    return all_protein
 #------------------------------------------A----------------------------------------------#
 
 def countSynonymsAt(kodon):
@@ -85,46 +86,52 @@ def countSynonyms(DATA):
 #.........................................................................................#
 #.........................................................................................#
 #------------------------------------------B.a----------------------------------------------#
-def addGaps(seq1, seq2):
-    alignment = pairwise2.align.globalxx(seq1, seq2)[0]
-    return alignment.seqA,alignment.seqB,alignment.score
-    pass
+def count_equal_genes(genesA,genesB):
+    count=0
+    for i in range(len(genesA)):
+        if genesA[i][0]==genesB[i][0]:
+            count=+1
+    return count
 
-
-def OnlyInFirst(gen,seq1,seq2):
-    newGens={}
-    for i in range(len(seq1)):
-        if seq2[i]=='-':
-            newGens[i]=seq1[i]
-    return newGens
-    pass
-def compare(first_RNA,sec_RNA):
-    pass
-
-
-def getNumberOfEqual(howMany,seqA,seqB):
-    dic={}
-    for i in range(len(seqA)):
-        if howMany==0:
-            i=len(seqA)
-            break
-        if seqA[i]==seqB[i]:
-            dic[i]=seqA[i]
-            howMany-=1
-    return dic
-def calculateDNDS(seqA,seqB):
-    dN, dS=cal_dn_ds(seqA,seqB)
-    dN_dS_ratio= float(dN,dS)
-    return dN,dS,dN_dS_ratio
-    pass
-def findGenFrom(start,seq):
-    index=findAUG(seq[start:])
-    pass
 
 #.........................................................................................#
 #------------------------------------------B.b----------------------------------------------#
+def calculateDNDS(seqA,seqB):
+    dN, dS=cal_dn_ds(CodonSeq(seqA),CodonSeq(seqB))
+    dN_dS_ratio=-1
+    if dS!=0:
+        dN_dS_ratio= float(dN/dS)
+    return dN,dS,dN_dS_ratio
+    pass
+
+def getKODON(gene,data):
+    end=gene[1].end
+    start=gene[1].start
+    return data[start:end]
+    pass
+
+def getGeneNames(gene):
+    names=[]
+    for i in range(len(gene)):
+        gene_name=gene[i][2].qualifiers['gene'][0]
+        if gene_name not in names:
+            names.append(gene_name)
+    return names
+def compareOrganizm(genA,genB):
+    equalGenes=0
+    unqualGenes=0
+    gen_names_A=getGeneNames(genA)
+    gen_names_B = getGeneNames(genB)
+    for i in range(min(len(gen_names_A),len(gen_names_B))):
+        if gen_names_A[i]==gen_names_B[i]:
+            equalGenes+=1
+        else:
+            unqualGenes+=1
 
 
+    return equalGenes,unqualGenes
+
+    pass
 
 #.........................................................................................#
 #.........................................................................................#
@@ -135,81 +142,61 @@ def findGenFrom(start,seq):
 data_corona=open_GB("corona_2020.gb")
 data_corona_recent=open_GB("corona_2022.gb")
 
-#     a    ----->
+
+
+
+#     A      ----->
 dic=countSynonyms(get_sequence(data_corona))
 print(dic)
 
-#     b    ----->
-protains_2020=get_protain("BS168.gb")
-protains_2022=get_protain("corona_2022.gb")
-print(protains_2020)
 
 
 
+#     B.a    ----->
+print()
+genes_2020=get_protain("corona_2020.gb")
+genes_2022=get_protain("corona_2022.gb")
+
+count_of_equal_genes=count_equal_genes(genes_2020,genes_2022)
+print("exacaly same genes:",count_of_equal_genes)
+equalSum,unequalSum=compareOrganizm(genes_2020,genes_2022)
+print("same genes overall:",equalSum)
+if unequalSum==0:
+    if equalSum!=count_of_equal_genes:
+        print("both have the same genes, some protains are diffrent")
+    else:
+        print("both have the same exacaly gene's")
+else:
+    print("the amount of unequal genes:",unequalSum)
 
 
 
+#     B.b    ----->
+print()
+dndsList=[]
+toPrint=[[]*5]
+for i in range(3,8):
+    dndsList.append(calculateDNDS(getKODON(genes_2020[i],get_sequence(data_corona))[:-3],getKODON(genes_2022[i],get_sequence(data_corona_recent))[:-3]))
+    dN, dS, dN_dS_ratio = dndsList[i-3]
+    gene=genes_2020[i][2].qualifiers['gene']
+    locus_tag=genes_2020[i][2].qualifiers['locus_tag']
+    protein_id=genes_2020[i][2].qualifiers['protein_id']
+    product=genes_2020[i][2].qualifiers['product']
+    Type=genes_2020[i][2].type
+    selectionType=""
+
+    if dN_dS_ratio>1.25 or dN_dS_ratio==-1:
+        selectionType="Positive selection"
+    elif dN_dS_ratio<0.75:
+        selectionType="Negative selection"
+    else:
+        selectionType="Neutral selection"
+    if dN_dS_ratio==-1:
+        dN_dS_ratio="unvalid"
+    toPrint.append([gene[0],locus_tag[0],protein_id[0],product,Type,dN,dS,dN_dS_ratio,selectionType])
+
+
+print(tabulate(toPrint, headers=['gene', 'locus_tag','protein_id','product','type','dN','dS','dN_dS_ratio','prefences'], tablefmt='orgtbl'))
 
 
 
-
-
-
-
-
-
-
-
-corona_2020,corona_2022,score=addGaps(TESTA,TESTB)
-corona_2020_old_gens=OnlyInFirst(corona_2020,corona_2022)
-corona_2022_new_gens=OnlyInFirst(corona_2022,corona_2020)
-print("they have ",score," amount of gen")
-print(corona_2020_old_gens)
-print(corona_2022_new_gens)
-
-# def main_b():
-#     print("in c")
-#     #a    ----->
-#     data=open_GB("corona_2020.gb")
-#     dic=countSismogram(data)
-#     print(dic)
-#     #b    ----->
-#
-# data_corona=open_GB("corona_2020.gb")
-# print(data_corona)
-#
-# print(dic)
-#
-# def main_c():
-#     data_corona=open_GB("corona_2020.gb")
-#     print(data_corona)
-#     dic=countSismogram(data_corona)
-#     print(dic)
-#
-#     data_corona_recent=open_GB("corona_2022.gb")
-#     TESTA="ACG"
-#     TESTB="AAG"
-#
-#     corona_2020,corona_2022,score=addGaps(TESTA,TESTB)
-#     print(corona_2020,corona_2022,score)
-#     corona_2020_old_gens=OnlyInFirst(corona_2020,corona_2022)
-#     corona_2022_new_gens=OnlyInFirst(corona_2022,corona_2020)
-#     print(corona_2020_old_gens)
-#     print(corona_2022_new_gens)
-#     equal_gens=getNumberOfEqual(5,corona_2020,corona_2022)
-#     gens={}
-#     From_2020=0
-#     From_2022=0
-#     for i in range(len(corona_2020)):
-#         genA,From_2020=findGenFrom(From_2020,corona_2020)
-#         genB,From_2022=findGenFrom(From_2022,corona_2020)
-#         gens[i]=[genA,genB]
-#
-#
-#     print(equal_gens)
-#     dnds_dic={}
-#     for i in range(gens):
-#         dN,dS,dN_dS_ratio=calculateDNDS(gens[i][0],gens[i][1])
-#         dnds_dic[i]=[dN,dS,dN_dS_ratio]
-#
-#     matches,additional_gens=compare(corona_2020,corona_2022)
