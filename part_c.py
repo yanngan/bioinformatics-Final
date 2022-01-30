@@ -4,6 +4,10 @@ from Bio.pairwise2 import format_alignment
 from Bio.codonalign.codonseq import CodonSeq, cal_dn_ds
 import tools
 from tabulate import tabulate
+from Bio.Align import substitution_matrices
+from Bio import Align
+import pprint
+
 
 #--------------------------------------global values-------------------------------------#
 nextLatter={
@@ -96,8 +100,30 @@ def count_equal_genes(genesA,genesB):
 
 #.........................................................................................#
 #------------------------------------------B.b----------------------------------------------#
-def calculateDNDS(seqA,seqB):
-    dN, dS=cal_dn_ds(CodonSeq(seqA),CodonSeq(seqB))
+def correctKodon(seq,gene):
+    fixed_seq=""
+    seq_counter=0
+    for i in range(len(gene)):
+        if gene[i]=='-':
+            fixed_seq+='---'
+        else:
+            fixed_seq+=seq[seq_counter:seq_counter+3]
+            seq_counter+=3
+    return fixed_seq
+    pass
+def calculateDNDS(seqA,seqB,geneA,geneB):
+    aligner = Align.PairwiseAligner()
+    aligner.substitution_matrix = substitution_matrices.load("BLOSUM62")
+    TA="GAAGGG"
+    TB="GGAGAG"
+    alignments = aligner.align(geneA, geneB)
+    string=str(alignments[0])
+
+
+    index=string.find('\n')
+    inOrderA=correctKodon(seqA,string[0:index])
+    inOrderB=correctKodon(seqB,string[index*2+2:-1])
+    dN, dS=cal_dn_ds(CodonSeq(inOrderA[0:min(len(inOrderA),len(inOrderB))]),CodonSeq(inOrderB[0:min(len(inOrderA),len(inOrderB))]))
     dN_dS_ratio=-1
     if dS!=0:
         dN_dS_ratio= float(dN/dS)
@@ -147,7 +173,7 @@ data_corona_recent=open_GB("corona_2022.gb")
 
 #     A      ----->
 dic=countSynonyms(get_sequence(data_corona))
-print(dic)
+pprint.pprint(dic)
 
 
 
@@ -175,9 +201,11 @@ else:
 print()
 dndsList=[]
 toPrint=[[]*5]
-for i in range(3,8):
-    dndsList.append(calculateDNDS(getKODON(genes_2020[i],get_sequence(data_corona))[:-3],getKODON(genes_2022[i],get_sequence(data_corona_recent))[:-3]))
-    dN, dS, dN_dS_ratio = dndsList[i-3]
+F=2
+T=7
+for i in range(F,T):
+    dndsList.append(calculateDNDS(getKODON(genes_2020[i],get_sequence(data_corona)),getKODON(genes_2022[i],get_sequence(data_corona_recent)),genes_2020[i][0],genes_2022[i][0]))
+    dN, dS, dN_dS_ratio = dndsList[i-F]
     gene=genes_2020[i][2].qualifiers['gene']
     locus_tag=genes_2020[i][2].qualifiers['locus_tag']
     protein_id=genes_2020[i][2].qualifiers['protein_id']
@@ -193,7 +221,7 @@ for i in range(3,8):
         selectionType="Neutral selection"
     if dN_dS_ratio==-1:
         dN_dS_ratio="unvalid"
-    toPrint.append([gene[0],locus_tag[0],protein_id[0],product,Type,dN,dS,dN_dS_ratio,selectionType])
+    toPrint.append([gene[0],locus_tag[0],protein_id[0],product[0],Type,dN,dS,dN_dS_ratio,selectionType])
 
 
 print(tabulate(toPrint, headers=['gene', 'locus_tag','protein_id','product','type','dN','dS','dN_dS_ratio','prefences'], tablefmt='orgtbl'))
