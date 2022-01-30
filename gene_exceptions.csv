@@ -1,0 +1,956 @@
+,name,type,start,end,strand,inconsistent protein length,wrong nucleotide,missing start/end codon,nonNucleotide in gene
+0,recF,CDS-gene,3436,4549,1,no,yes,missing start codon,no
+1,remB,CDS-gene,4566,4812,1,no,yes,missing start codon,no
+2,dacA,CDS-gene,17533,18865,1,no,yes,missing start codon,no
+3,sleL,CDS-gene,23867,25151,-1,no,yes,missing stop and start codon,no
+4,yaaI,CDS-gene,25220,25766,-1,no,yes,missing stop and start codon,no
+5,dnaX,CDS-gene,26813,28505,1,no,yes,missing start codon,no
+6,yaaR,CDS-gene,40212,40653,1,no,yes,missing start codon,no
+7,ricT,CDS-gene,41656,42484,1,no,yes,missing start codon,no
+8,dnaH,CDS-gene,42498,42858,1,no,yes,missing start codon,no
+9,yabE,CDS-gene,48628,49942,1,no,yes,missing start codon,no
+10,prtG,CDS-gene,51679,52552,1,no,yes,missing start codon,no
+11,sspF,CDS-gene,53182,53368,1,no,yes,missing start codon,no
+12,spoVG,CDS-gene,55865,56159,1,no,yes,missing start codon,no
+13,divIC,CDS-gene,69167,69545,1,no,yes,missing start codon,no
+14,yabS,CDS-gene,73105,73843,1,no,yes,missing start codon,no
+15,tilS,CDS-gene,74928,76347,1,no,yes,missing start codon,no
+16,coaX,CDS-gene,79091,79868,1,no,yes,missing start codon,no
+17,yacD,CDS-gene,80801,81695,1,no,yes,missing start codon,no
+18,dusB,CDS-gene,87633,88635,1,no,yes,missing start codon,no
+19,ctsR,CDS-gene,101448,101913,1,no,yes,missing start codon,no
+20,mcsA,CDS-gene,101926,102484,1,no,yes,missing start codon,no
+21,cysE,CDS-gene,112799,113453,1,no,yes,missing start codon,no
+22,sigH,CDS-gene,116599,117256,1,no,yes,missing start codon,no
+23,rplK,CDS-gene,118590,119016,1,no,yes,missing start codon,no
+24,rpoB,CDS-gene,121918,125500,1,no,yes,missing start codon,no
+25,rpoC,CDS-gene,125561,129161,1,no,yes,missing start codon,no
+26,rpsC,CDS-gene,138841,139498,1,no,yes,missing start codon,no
+27,rpsNA,CDS-gene,141756,141942,1,no,yes,missing start codon,no
+28,secY,CDS-gene,144526,145822,1,no,yes,missing start codon,no
+29,ybzG,CDS-gene,147311,147536,1,no,yes,missing start codon,no
+30,rpsI,CDS-gene,154299,154692,1,no,yes,missing start codon,no
+31,pdaB,CDS-gene,159778,160543,-1,no,yes,missing stop and start codon,no
+32,ybaR,CDS-gene,177082,178519,1,no,yes,missing start codon,no
+33,eesA,CDS-gene,179594,180347,-1,no,yes,missing stop and start codon,no
+34,btr,CDS-gene,183413,185003,-1,no,yes,missing stop and start codon,no
+35,amiE,CDS-gene,188407,189733,-1,no,yes,missing stop and start codon,no
+36,alkA,CDS-gene,202546,203458,-1,no,yes,missing stop and start codon,no
+37,ybdK,CDS-gene,221949,222912,1,no,yes,missing start codon,no
+38,ybzI,CDS-gene,222970,223234,1,no,yes,missing start codon,no
+39,ybxG,CDS-gene,226565,227954,1,no,yes,missing start codon,no
+40,ybfA,CDS-gene,235964,236882,1,no,yes,missing start codon,no
+41,pssA,CDS-gene,247743,248277,1,no,yes,missing start codon,no
+42,ybfO,CDS-gene,249978,251319,1,no,yes,missing start codon,no
+43,gltP,CDS-gene,253517,254762,-1,no,yes,missing stop and start codon,no
+44,ilvE,CDS-gene,259015,260086,1,no,yes,missing start codon,no
+45,garR,CDS-gene,273236,273938,1,no,yes,missing start codon,no
+46,ycbL,CDS-gene,278376,279057,1,no,yes,missing start codon,no
+47,ycbN,CDS-gene,280085,281009,1,no,yes,missing start codon,no
+48,,CDS-gene,281674,281809,-1,no,yes,missing stop and start codon,no
+49,yczC,CDS-gene,292880,293264,-1,no,yes,missing stop and start codon,no
+50,yccF,CDS-gene,293498,294575,1,no,yes,missing start codon,no
+51,natK,CDS-gene,294614,295571,-1,no,yes,missing stop and start codon,no
+52,ycdC,CDS-gene,302434,303796,1,no,yes,missing start codon,no
+53,yceB,CDS-gene,310879,311875,-1,no,yes,missing stop and start codon,no
+54,yceC,CDS-gene,312158,312758,1,no,yes,missing start codon,no
+55,yceF,CDS-gene,314024,314798,1,no,yes,missing start codon,no
+56,yceJ,CDS-gene,319179,320352,-1,no,yes,missing stop and start codon,no
+57,ycgE,CDS-gene,334091,334556,1,no,yes,missing start codon,no
+58,ycgF,CDS-gene,334629,335259,1,no,yes,missing start codon,no
+59,putB,CDS-gene,344550,345462,1,no,yes,missing start codon,no
+60,ycgR,CDS-gene,350857,351742,-1,no,yes,missing stop and start codon,no
+61,nasC,CDS-gene,358302,360435,-1,no,yes,missing stop and start codon,no
+62,yczL,CDS-gene,365849,366035,1,no,yes,missing start codon,no
+63,yckB,CDS-gene,367994,368858,-1,no,yes,missing stop and start codon,no
+64,,CDS-gene,369019,369217,1,no,yes,missing start codon,no
+65,nin,CDS-gene,371728,372127,-1,no,yes,missing stop and start codon,no
+66,nucA,CDS-gene,372153,372603,-1,no,yes,missing stop and start codon,no
+67,hxlR,CDS-gene,376031,376394,1,no,yes,missing start codon,no
+68,comS,CDS-gene,390879,391020,1,no,yes,missing start codon,no
+69,yczE,CDS-gene,408239,408887,-1,no,yes,missing stop and start codon,no
+70,bsdA,CDS-gene,411577,412450,-1,no,yes,missing stop and start codon,no
+71,yclD,CDS-gene,414818,415283,1,no,yes,missing start codon,no
+72,yclG,CDS-gene,417992,419747,1,no,yes,missing start codon,no
+73,yclK,CDS-gene,427246,428668,1,no,yes,missing start codon,no
+74,ycnB,CDS-gene,436035,437454,-1,no,yes,missing stop and start codon,no
+75,cutI,CDS-gene,446173,446788,-1,no,yes,missing stop and start codon,no
+76,sipU,CDS-gene,454028,454592,1,no,yes,missing start codon,no
+77,pxpA,CDS-gene,457022,457796,1,no,yes,missing start codon,no
+78,yczI,CDS-gene,463244,463490,1,no,yes,missing start codon,no
+79,amj,CDS-gene,474730,475540,1,no,yes,missing start codon,no
+80,epsJ,CDS-gene,478943,480032,1,no,yes,missing start codon,no
+81,ydaL,CDS-gene,480874,482584,1,no,yes,missing start codon,no
+82,ydaM,CDS-gene,482576,483839,1,no,yes,missing start codon,no
+83,ydaN,CDS-gene,483844,485956,1,no,yes,missing start codon,no
+84,nudT,CDS-gene,488313,488763,1,no,yes,missing start codon,no
+85,,CDS-gene,490545,490749,-1,no,yes,missing stop and start codon,no
+86,ydbA,CDS-gene,493558,494377,1,no,yes,missing start codon,no
+87,ydbL,CDS-gene,504688,505024,1,no,yes,missing start codon,no
+88,fbpB,CDS-gene,506321,506501,-1,no,yes,missing stop and start codon,no
+89,ddlA,CDS-gene,508247,509312,1,no,yes,missing start codon,no
+90,murF,CDS-gene,509383,510757,1,no,yes,missing start codon,no
+91,cshA,CDS-gene,511156,512641,1,no,yes,missing start codon,no
+92,ydbS,CDS-gene,512813,513293,1,no,yes,missing start codon,no
+93,ydcC,CDS-gene,516240,517257,1,no,yes,missing start codon,no
+94,ndoAI,CDS-gene,518656,518938,1,no,yes,missing start codon,no
+95,ndoA,CDS-gene,518942,519293,1,no,yes,missing start codon,no
+96,rsbRA,CDS-gene,519407,520232,1,no,yes,missing start codon,no
+97,rsbS,CDS-gene,520236,520602,1,no,yes,missing start codon,no
+98,rsbU,CDS-gene,521018,522026,1,no,yes,missing start codon,no
+99,ydcH,CDS-gene,525205,525649,1,no,yes,missing start codon,no
+100,immA,CDS-gene,530623,531133,-1,no,yes,missing stop and start codon,no
+101,xis,CDS-gene,531786,531981,1,no,yes,missing start codon,no
+102,ydzL,CDS-gene,531977,532238,1,no,yes,missing start codon,no
+103,,CDS-gene,532757,532886,1,no,yes,missing start codon,no
+104,ydcT,CDS-gene,536403,536670,1,no,yes,missing start codon,no
+105,yddA,CDS-gene,536686,536995,1,no,yes,missing start codon,no
+106,conB,CDS-gene,536984,538049,1,no,yes,missing start codon,no
+107,conG,CDS-gene,541577,544025,1,no,yes,missing start codon,no
+108,yddJ,CDS-gene,545594,545975,1,no,yes,missing start codon,no
+109,rapI,CDS-gene,547305,548481,1,no,yes,missing start codon,no
+110,yddM,CDS-gene,548709,549651,1,no,yes,missing start codon,no
+111,yddT,CDS-gene,556762,557449,1,no,yes,missing start codon,no
+112,ydzN,CDS-gene,557872,558058,1,no,yes,missing start codon,no
+113,sufLC,CDS-gene,558407,559001,1,no,yes,missing start codon,no
+114,ydzE,CDS-gene,561179,561416,-1,no,yes,missing stop and start codon,no
+115,ydeH,CDS-gene,567661,568108,1,no,yes,missing start codon,no
+116,ydeP,CDS-gene,575711,576098,-1,no,yes,missing stop and start codon,no
+117,ydeS,CDS-gene,578336,578933,1,no,yes,missing start codon,no
+118,arsF,CDS-gene,579888,581196,1,no,yes,missing start codon,no
+119,ydfB,CDS-gene,581693,582479,1,no,yes,missing start codon,no
+120,ydfE,CDS-gene,585154,585778,-1,no,yes,missing stop and start codon,no
+121,ydzQ,CDS-gene,587332,587476,-1,no,yes,missing stop and start codon,no
+122,ydfH,CDS-gene,587743,588967,1,no,yes,missing start codon,no
+123,ydgC,CDS-gene,603011,603599,1,no,yes,missing start codon,no
+124,ydgF,CDS-gene,606698,608075,-1,no,yes,missing stop and start codon,no
+125,ydgG,CDS-gene,608932,609391,1,no,yes,missing start codon,no
+126,ydgJ,CDS-gene,612835,613330,-1,no,yes,missing stop and start codon,no
+127,phoB,CDS-gene,620096,621485,-1,no,yes,missing stop and start codon,no
+128,ydhK,CDS-gene,624491,625109,1,no,yes,missing start codon,no
+129,gmuB,CDS-gene,626621,626933,1,no,yes,missing start codon,no
+130,gmuC,CDS-gene,627283,628612,1,no,yes,missing start codon,no
+131,gmuD,CDS-gene,628629,630027,1,no,yes,missing start codon,no
+132,gmuG,CDS-gene,632773,633862,1,no,yes,missing start codon,no
+133,tsaE,CDS-gene,641653,642130,1,no,yes,missing start codon,no
+134,ydiL,CDS-gene,648929,649664,-1,no,yes,missing stop and start codon,no
+135,groES,CDS-gene,649902,650187,1,no,yes,missing start codon,no
+136,ydzU,CDS-gene,654070,654343,1,no,yes,missing start codon,no
+137,bsuMB,CDS-gene,656527,657697,1,no,yes,missing start codon,no
+138,ydjC,CDS-gene,664318,664669,1,no,yes,missing start codon,no
+139,ydzJ,CDS-gene,680906,681065,-1,no,yes,missing stop and start codon,no
+140,pbuG,CDS-gene,694661,695984,1,no,yes,missing start codon,no
+141,purK,CDS-gene,699092,700235,1,no,yes,missing start codon,no
+142,purC,CDS-gene,701600,702326,1,no,yes,missing start codon,no
+143,purQ,CDS-gene,702569,703253,1,no,yes,missing start codon,no
+144,purD,CDS-gene,710147,711416,1,no,yes,missing start codon,no
+145,yezF,CDS-gene,713307,713535,-1,no,yes,missing stop and start codon,no
+146,pcrB,CDS-gene,718621,719308,1,no,yes,missing start codon,no
+147,pcrA,CDS-gene,719369,721589,1,no,yes,missing start codon,no
+148,yerH,CDS-gene,723634,724825,1,no,yes,missing start codon,no
+149,sapB,CDS-gene,726034,726733,-1,no,yes,missing stop and start codon,no
+150,opuE,CDS-gene,726839,728318,-1,no,yes,missing stop and start codon,no
+151,gatB,CDS-gene,730508,731939,1,no,yes,missing start codon,no
+152,yefB,CDS-gene,738994,739897,-1,no,yes,missing stop and start codon,no
+153,yefC,CDS-gene,739877,740213,1,no,yes,missing start codon,no
+154,yeeD,CDS-gene,746260,746566,-1,no,yes,missing stop and start codon,no
+155,rapH,CDS-gene,750958,752089,1,no,yes,missing start codon,no
+156,yezE,CDS-gene,753816,754401,1,no,yes,missing start codon,no
+157,yesK,CDS-gene,757675,757978,1,no,yes,missing start codon,no
+158,yesO,CDS-gene,761661,762945,1,no,yes,missing start codon,no
+159,rhgP,CDS-gene,762941,763871,1,no,yes,missing start codon,no
+160,rhgT,CDS-gene,768136,768835,1,no,yes,missing start codon,no
+161,lplD,CDS-gene,782957,784298,1,no,yes,missing start codon,no
+162,yezD,CDS-gene,787714,787882,1,no,yes,missing start codon,no
+163,spmG,CDS-gene,799239,800208,1,no,yes,missing start codon,no
+164,yfnF,CDS-gene,800231,801143,1,no,yes,missing start codon,no
+165,yfnE,CDS-gene,801171,802350,1,no,yes,missing start codon,no
+166,yfnD,CDS-gene,802350,803286,1,no,yes,missing start codon,no
+167,copP,CDS-gene,812139,812562,1,no,yes,missing start codon,no
+168,yfmG,CDS-gene,820866,822330,1,no,yes,missing start codon,no
+169,fecD,CDS-gene,824713,825715,-1,no,yes,missing stop and start codon,no
+170,citS,CDS-gene,830944,832573,1,no,yes,missing start codon,no
+171,citT,CDS-gene,832544,833225,1,no,yes,missing start codon,no
+172,citM,CDS-gene,834382,835684,1,no,yes,missing start codon,no
+173,nosA,CDS-gene,836652,837744,1,no,yes,missing start codon,no
+174,yfkN,CDS-gene,855113,859502,-1,no,yes,missing stop and start codon,no
+175,yfkK,CDS-gene,861585,861801,-1,no,yes,missing stop and start codon,no
+176,yfjR,CDS-gene,870387,871248,-1,no,yes,missing stop and start codon,no
+177,yfjO,CDS-gene,873401,874802,1,no,yes,missing start codon,no
+178,yfjE,CDS-gene,886222,886681,-1,no,yes,missing stop and start codon,no
+179,yfjD,CDS-gene,886774,887332,-1,no,yes,missing stop and start codon,no
+180,yfjB,CDS-gene,888142,889366,-1,no,yes,missing stop and start codon,no
+181,yfjA,CDS-gene,889371,889686,-1,no,yes,missing stop and start codon,no
+182,yfiG,CDS-gene,900079,901528,1,no,yes,missing start codon,no
+183,linJ,CDS-gene,903810,905013,1,no,yes,missing start codon,no
+184,bifL,CDS-gene,905815,906751,1,no,yes,missing start codon,no
+185,bifN,CDS-gene,907967,909125,1,no,yes,missing start codon,no
+186,estB,CDS-gene,910018,910651,1,no,yes,missing start codon,no
+187,yfiR,CDS-gene,911963,912581,-1,no,yes,missing stop and start codon,no
+188,mprF,CDS-gene,916777,919348,1,no,yes,missing start codon,no
+189,yfhI,CDS-gene,926885,928079,1,no,yes,missing start codon,no
+190,ephM,CDS-gene,929724,930585,1,no,yes,missing start codon,no
+191,ygaD,CDS-gene,939348,941091,1,no,yes,missing start codon,no
+192,gsaB,CDS-gene,942448,943738,-1,no,yes,missing stop and start codon,no
+193,ygzC,CDS-gene,954578,954851,-1,no,yes,missing stop and start codon,no
+194,ygaK,CDS-gene,957704,959060,-1,no,yes,missing stop and start codon,no
+195,ssuB,CDS-gene,961393,962161,1,no,yes,missing start codon,no
+196,rpsNB,CDS-gene,965908,966178,1,no,yes,missing start codon,no
+197,yhzB,CDS-gene,967228,967852,-1,no,yes,missing stop and start codon,no
+198,trmL,CDS-gene,970134,970617,1,no,yes,missing start codon,no
+199,yhbI,CDS-gene,976568,977033,1,no,yes,missing start codon,no
+200,dgcK,CDS-gene,985733,986813,-1,no,yes,missing stop and start codon,no
+201,tcyP,CDS-gene,986985,988377,1,no,yes,missing start codon,no
+202,yhcO,CDS-gene,989711,990680,1,no,yes,missing start codon,no
+203,yhcQ,CDS-gene,990611,991265,-1,no,yes,missing stop and start codon,no
+204,srtA,CDS-gene,994997,995594,1,no,yes,missing start codon,no
+205,glpW,CDS-gene,997723,998386,1,no,yes,missing start codon,no
+206,yhcX,CDS-gene,998401,999943,1,no,yes,missing start codon,no
+207,yhcY,CDS-gene,1008667,1009807,1,no,yes,missing start codon,no
+208,spoVR,CDS-gene,1015646,1017053,1,no,yes,missing start codon,no
+209,yhdF,CDS-gene,1022230,1023100,1,no,yes,missing start codon,no
+210,yhdH,CDS-gene,1024864,1026220,1,no,yes,missing start codon,no
+211,sigM,CDS-gene,1029576,1030068,-1,no,yes,missing stop and start codon,no
+212,yhdP,CDS-gene,1032062,1033397,-1,no,yes,missing stop and start codon,no
+213,yhdW,CDS-gene,1037687,1038419,-1,no,yes,missing stop and start codon,no
+214,srtN,CDS-gene,1040093,1040837,1,no,yes,missing start codon,no
+215,nhaC,CDS-gene,1042884,1044246,-1,no,yes,missing stop and start codon,no
+216,bmrB,CDS-gene,1045036,1045198,1,no,yes,missing start codon,no
+217,yheF,CDS-gene,1049800,1049926,-1,no,yes,missing stop and start codon,no
+218,yheE,CDS-gene,1050442,1050661,-1,no,yes,missing stop and start codon,no
+219,spaD,CDS-gene,1050810,1052172,-1,no,yes,missing stop and start codon,no
+220,yhaX,CDS-gene,1056701,1057568,1,no,yes,missing start codon,no
+221,hemZ,CDS-gene,1057679,1059185,1,no,yes,missing start codon,no
+222,khtT,CDS-gene,1060426,1060924,-1,no,yes,missing stop and start codon,no
+223,yhaQ,CDS-gene,1062590,1063487,1,no,yes,missing start codon,no
+224,sbcE,CDS-gene,1066076,1068968,1,no,yes,missing start codon,no
+225,yhaL,CDS-gene,1070110,1070323,1,no,yes,missing start codon,no
+226,yhzF,CDS-gene,1074380,1074572,1,no,yes,missing start codon,no
+227,sndC,CDS-gene,1080149,1081340,-1,no,yes,missing stop and start codon,no
+228,hemH,CDS-gene,1087249,1088182,1,no,yes,missing start codon,no
+229,yhfH,CDS-gene,1098119,1098260,-1,no,yes,missing stop and start codon,no
+230,aprE,CDS-gene,1104422,1105568,-1,no,yes,missing stop and start codon,no
+231,hemAT,CDS-gene,1112619,1113918,-1,no,yes,missing stop and start codon,no
+232,yhfW,CDS-gene,1114056,1115586,-1,no,yes,missing stop and start codon,no
+233,yhxC,CDS-gene,1115697,1116555,1,no,yes,missing start codon,no
+234,yhjN,CDS-gene,1130917,1132072,-1,no,yes,missing stop and start codon,no
+235,yhjP,CDS-gene,1133497,1135225,1,no,yes,missing start codon,no
+236,yhjR,CDS-gene,1135698,1136136,-1,no,yes,missing stop and start codon,no
+237,addB,CDS-gene,1136319,1139820,1,no,yes,missing start codon,no
+238,sbcD,CDS-gene,1143576,1144752,1,no,yes,missing start codon,no
+239,yizA,CDS-gene,1159210,1159690,-1,no,yes,missing stop and start codon,no
+240,farP,CDS-gene,1159921,1160746,1,no,yes,missing start codon,no
+241,iolX,CDS-gene,1164369,1165398,1,no,yes,missing start codon,no
+242,yisU,CDS-gene,1166007,1166670,-1,no,yes,missing stop and start codon,no
+243,yitA,CDS-gene,1170472,1171642,-1,no,yes,missing stop and start codon,no
+244,yitB,CDS-gene,1171754,1172465,-1,no,yes,missing stop and start codon,no
+245,yitF,CDS-gene,1174860,1175976,-1,no,yes,missing stop and start codon,no
+246,yitM,CDS-gene,1182447,1183032,-1,no,yes,missing stop and start codon,no
+247,nprB,CDS-gene,1186036,1187653,1,no,yes,missing start codon,no
+248,yitV,CDS-gene,1191422,1192190,1,no,yes,missing start codon,no
+249,yitW,CDS-gene,1192253,1192562,1,no,yes,missing start codon,no
+250,yitZ,CDS-gene,1194332,1194827,1,no,yes,missing start codon,no
+251,argC,CDS-gene,1195033,1196071,1,no,yes,missing start codon,no
+252,yjzC,CDS-gene,1204505,1204685,1,no,yes,missing start codon,no
+253,yjzD,CDS-gene,1204730,1204916,-1,no,yes,missing stop and start codon,no
+254,med,CDS-gene,1206628,1207582,1,no,yes,missing start codon,no
+255,oppB,CDS-gene,1221593,1222529,1,no,yes,missing start codon,no
+256,oppD,CDS-gene,1223454,1224531,1,no,yes,missing start codon,no
+257,oppF,CDS-gene,1224532,1225450,1,no,yes,missing start codon,no
+258,yjbB,CDS-gene,1225556,1226774,1,no,yes,missing start codon,no
+259,,CDS-gene,1228960,1229101,1,no,yes,missing start codon,no
+260,pepF,CDS-gene,1231082,1233095,1,no,yes,missing start codon,no
+261,spxH,CDS-gene,1233613,1234513,-1,no,yes,missing stop and start codon,no
+262,tenA,CDS-gene,1242448,1243159,1,no,yes,missing start codon,no
+263,tenI,CDS-gene,1243133,1243751,1,no,yes,missing start codon,no
+264,yjcA,CDS-gene,1252176,1252533,1,no,yes,missing start codon,no
+265,yjzK,CDS-gene,1252814,1253021,1,no,yes,missing start codon,no
+266,yjcD,CDS-gene,1253712,1255992,-1,no,yes,missing stop and start codon,no
+267,yjcF,CDS-gene,1256435,1256858,-1,no,yes,missing stop and start codon,no
+268,metC,CDS-gene,1259605,1260778,1,no,yes,missing start codon,no
+269,yjcL,CDS-gene,1261425,1262616,-1,no,yes,missing stop and start codon,no
+270,yjdH,CDS-gene,1277061,1277457,-1,no,yes,missing stop and start codon,no
+271,yjdJ,CDS-gene,1278564,1278894,-1,no,yes,missing stop and start codon,no
+272,cotT,CDS-gene,1280625,1280874,-1,no,yes,missing stop and start codon,no
+273,pdaC,CDS-gene,1281127,1282531,1,no,yes,missing start codon,no
+274,yjfA,CDS-gene,1282570,1283044,-1,no,yes,missing stop and start codon,no
+275,yjhB,CDS-gene,1290017,1290644,1,no,yes,missing start codon,no
+276,yjiA,CDS-gene,1290674,1290953,-1,no,yes,missing stop and start codon,no
+277,yjmC,CDS-gene,1303422,1304436,1,no,yes,missing start codon,no
+278,uxaB,CDS-gene,1309879,1311322,1,no,yes,missing start codon,no
+279,uxaA,CDS-gene,1311318,1312812,1,no,yes,missing start codon,no
+280,rapA,CDS-gene,1315868,1317005,1,no,yes,missing start codon,no
+281,xlyB,CDS-gene,1317534,1318488,1,no,yes,missing start codon,no
+282,xkdA,CDS-gene,1320569,1321166,-1,no,yes,missing stop and start codon,no
+283,xkdD,CDS-gene,1323801,1324152,1,no,yes,missing start codon,no
+284,xkdF,CDS-gene,1328701,1329529,1,no,yes,missing start codon,no
+285,xkdG,CDS-gene,1329554,1330490,1,no,yes,missing start codon,no
+286,ykzM,CDS-gene,1332186,1332405,1,no,yes,missing start codon,no
+287,xkzB,CDS-gene,1334814,1334964,1,no,yes,missing start codon,no
+288,xkdO,CDS-gene,1334965,1338964,1,no,yes,missing start codon,no
+289,xkdP,CDS-gene,1338956,1339616,1,no,yes,missing start codon,no
+290,xkdU,CDS-gene,1342379,1342958,1,no,yes,missing start codon,no
+291,xkzA,CDS-gene,1342954,1343227,1,no,yes,missing start codon,no
+292,ykcB,CDS-gene,1354284,1356435,1,no,yes,missing start codon,no
+293,dppB,CDS-gene,1361241,1362168,1,no,yes,missing start codon,no
+294,dppC,CDS-gene,1362173,1363136,1,no,yes,missing start codon,no
+295,ykjA,CDS-gene,1374436,1375168,1,no,yes,missing start codon,no
+296,ykoG,CDS-gene,1391952,1392639,1,no,yes,missing start codon,no
+297,ykoQ,CDS-gene,1400766,1401579,-1,no,yes,missing stop and start codon,no
+298,ykoT,CDS-gene,1403478,1404492,1,no,yes,missing start codon,no
+299,dgcW,CDS-gene,1407328,1409731,-1,no,yes,missing stop and start codon,no
+300,sigI,CDS-gene,1411891,1412647,1,no,yes,missing start codon,no
+301,ykzE,CDS-gene,1417718,1417895,1,no,yes,missing start codon,no
+302,,CDS-gene,1422012,1422138,1,no,yes,missing start codon,no
+303,queD,CDS-gene,1440099,1440549,1,no,yes,missing start codon,no
+304,ykvP,CDS-gene,1444098,1445298,1,no,yes,missing start codon,no
+305,ykvR,CDS-gene,1447250,1447541,1,no,yes,missing start codon,no
+306,ykvS,CDS-gene,1447661,1447847,-1,no,yes,missing stop and start codon,no
+307,ykzS,CDS-gene,1448012,1448207,1,no,yes,missing start codon,no
+308,papB,CDS-gene,1453690,1454782,1,no,yes,missing start codon,no
+309,mcpC,CDS-gene,1463627,1465595,1,no,yes,missing start codon,no
+310,ohaC,CDS-gene,1465732,1466599,1,no,yes,missing start codon,no
+311,pbpH,CDS-gene,1467747,1469862,1,no,yes,missing start codon,no
+312,kinA,CDS-gene,1470025,1471846,1,no,yes,missing start codon,no
+313,cheV,CDS-gene,1473604,1474516,1,no,yes,missing start codon,no
+314,ltdD,CDS-gene,1476517,1477012,-1,no,yes,missing stop and start codon,no
+315,ykuH,CDS-gene,1481546,1482095,1,no,yes,missing start codon,no
+316,abbA,CDS-gene,1485117,1485315,1,no,yes,missing start codon,no
+317,fldP,CDS-gene,1488412,1488868,1,no,yes,missing start codon,no
+318,fruA,CDS-gene,1509255,1511163,1,no,yes,missing start codon,no
+319,sipT,CDS-gene,1511307,1511889,1,no,yes,missing start codon,no
+320,ykoA,CDS-gene,1511922,1512192,-1,no,yes,missing stop and start codon,no
+321,ykqA,CDS-gene,1519634,1520468,1,no,yes,missing start codon,no
+322,adeC,CDS-gene,1521350,1523084,1,no,yes,missing start codon,no
+323,defB,CDS-gene,1526194,1526749,-1,no,yes,missing stop and start codon,no
+324,ykyA,CDS-gene,1527230,1527902,1,no,yes,missing start codon,no
+325,pdhC,CDS-gene,1530536,1531865,1,no,yes,missing start codon,no
+326,speA,CDS-gene,1534278,1535751,-1,no,yes,missing stop and start codon,no
+327,ykzC,CDS-gene,1538263,1538692,1,no,yes,missing start codon,no
+328,nprE,CDS-gene,1540035,1541601,-1,no,yes,missing stop and start codon,no
+329,ylaA,CDS-gene,1541885,1543826,1,no,yes,missing start codon,no
+330,bipA,CDS-gene,1546120,1547959,1,no,yes,missing start codon,no
+331,ylaH,CDS-gene,1548015,1548333,1,no,yes,missing start codon,no
+332,ylaJ,CDS-gene,1548680,1549310,-1,no,yes,missing stop and start codon,no
+333,ylaK,CDS-gene,1549464,1550793,1,no,yes,missing start codon,no
+334,ylaN,CDS-gene,1552411,1552693,1,no,yes,missing start codon,no
+335,pycA,CDS-gene,1554184,1557631,1,no,yes,missing start codon,no
+336,ylbA,CDS-gene,1565346,1565709,-1,no,yes,missing stop and start codon,no
+337,ylbC,CDS-gene,1566378,1567419,1,no,yes,missing start codon,no
+338,ylbD,CDS-gene,1567650,1568049,1,no,yes,missing start codon,no
+339,ylbG,CDS-gene,1568923,1569196,1,no,yes,missing start codon,no
+340,coaD,CDS-gene,1570077,1570563,1,no,yes,missing start codon,no
+341,ylbK,CDS-gene,1571980,1572763,1,no,yes,missing start codon,no
+342,ylbL,CDS-gene,1572764,1573790,1,no,yes,missing start codon,no
+343,gerR,CDS-gene,1576128,1576710,1,no,yes,missing start codon,no
+344,ylbP,CDS-gene,1576766,1577249,-1,no,yes,missing stop and start codon,no
+345,spoVD,CDS-gene,1584213,1586154,1,no,yes,missing start codon,no
+346,murD,CDS-gene,1588900,1590256,1,no,yes,missing start codon,no
+347,spoVE,CDS-gene,1590316,1591417,1,no,yes,missing start codon,no
+348,ylxW,CDS-gene,1594491,1595187,1,no,yes,missing start codon,no
+349,ylxX,CDS-gene,1595209,1595917,1,no,yes,missing start codon,no
+350,spoIIGA,CDS-gene,1603778,1604708,1,no,yes,missing start codon,no
+351,sigG,CDS-gene,1605629,1606412,1,no,yes,missing start codon,no
+352,thiQ,CDS-gene,1607555,1608836,1,no,yes,missing start codon,no
+353,ylmE,CDS-gene,1610169,1610862,1,no,yes,missing start codon,no
+354,lspA,CDS-gene,1616743,1617208,1,no,yes,missing start codon,no
+355,pyrR,CDS-gene,1618303,1618849,1,no,yes,missing start codon,no
+356,cysC,CDS-gene,1633368,1633962,1,no,yes,missing start codon,no
+357,fbnA,CDS-gene,1636130,1637849,-1,no,yes,missing stop and start codon,no
+358,coaBC,CDS-gene,1642850,1644071,1,no,yes,missing start codon,no
+359,defA,CDS-gene,1646511,1646994,1,no,yes,missing start codon,no
+360,prpC,CDS-gene,1650383,1651148,1,no,yes,missing start codon,no
+361,prkC,CDS-gene,1651141,1653088,1,no,yes,missing start codon,no
+362,yloU,CDS-gene,1656063,1656426,1,no,yes,missing start codon,no
+363,yloV,CDS-gene,1656441,1658103,1,no,yes,missing start codon,no
+364,recG,CDS-gene,1659809,1661858,1,no,yes,missing start codon,no
+365,rnhB,CDS-gene,1677450,1678218,1,no,yes,missing start codon,no
+366,dprA,CDS-gene,1682579,1683473,1,no,yes,missing start codon,no
+367,flgB,CDS-gene,1691277,1691667,1,no,yes,missing start codon,no
+368,fliE,CDS-gene,1692129,1692450,1,no,yes,missing start codon,no
+369,fliJ,CDS-gene,1697195,1697639,1,no,yes,missing start codon,no
+370,fliK,CDS-gene,1698277,1699741,1,no,yes,missing start codon,no
+371,fliZ,CDS-gene,1704210,1704870,1,no,yes,missing start codon,no
+372,fliQ,CDS-gene,1705542,1705812,1,no,yes,missing start codon,no
+373,flhG,CDS-gene,1710837,1711734,1,no,yes,missing start codon,no
+374,cheB,CDS-gene,1711735,1712809,1,no,yes,missing start codon,no
+375,frr,CDS-gene,1720525,1721083,1,no,yes,missing start codon,no
+376,dxr,CDS-gene,1722870,1724022,1,no,yes,missing start codon,no
+377,rulR,CDS-gene,1733409,1733685,1,no,yes,missing start codon,no
+378,rbfA,CDS-gene,1736450,1736804,1,no,yes,missing start codon,no
+379,ribC,CDS-gene,1737833,1738784,1,no,yes,missing start codon,no
+380,mlpA,CDS-gene,1742616,1743846,1,no,yes,missing start codon,no
+381,dapG,CDS-gene,1747122,1748337,1,no,yes,missing start codon,no
+382,rnjB,CDS-gene,1749417,1751085,1,no,yes,missing start codon,no
+383,spoIIIE,CDS-gene,1752277,1754641,1,no,yes,missing start codon,no
+384,ymfH,CDS-gene,1758313,1759600,1,no,yes,missing start codon,no
+385,mutL,CDS-gene,1778336,1780220,1,no,yes,missing start codon,no
+386,ymcC,CDS-gene,1781227,1781785,-1,no,yes,missing stop and start codon,no
+387,pksH,CDS-gene,1791192,1791972,1,no,yes,missing start codon,no
+388,ymaE,CDS-gene,1860448,1861273,-1,no,yes,missing stop and start codon,no
+389,ymaF,CDS-gene,1865875,1866289,1,no,yes,missing start codon,no
+390,miaA,CDS-gene,1866388,1867333,1,no,yes,missing start codon,no
+391,ymzC,CDS-gene,1867789,1868062,1,no,yes,missing start codon,no
+392,nrdI,CDS-gene,1868616,1869009,1,no,yes,missing start codon,no
+393,nrdE,CDS-gene,1868968,1871071,1,no,yes,missing start codon,no
+394,nrdF,CDS-gene,1871088,1872078,1,no,yes,missing start codon,no
+395,hflX,CDS-gene,1875303,1876566,1,no,yes,missing start codon,no
+396,ynzF,CDS-gene,1880622,1880967,1,no,yes,missing start codon,no
+397,ynzI,CDS-gene,1885752,1885917,1,no,yes,missing start codon,no
+398,xylR,CDS-gene,1890511,1891666,-1,no,yes,missing stop and start codon,no
+399,cotU,CDS-gene,1901116,1901377,-1,no,yes,missing stop and start codon,no
+400,,CDS-gene,1903180,1903468,-1,no,yes,missing stop and start codon,no
+401,yncM,CDS-gene,1903510,1904233,-1,no,yes,missing stop and start codon,no
+402,ynzK,CDS-gene,1904392,1904749,-1,no,yes,missing stop and start codon,no
+403,,CDS-gene,1905636,1905774,1,no,yes,missing start codon,no
+404,yndF,CDS-gene,1910166,1911381,1,no,yes,missing start codon,no
+405,yndG,CDS-gene,1911527,1912334,1,no,yes,missing start codon,no
+406,yndH,CDS-gene,1912338,1912956,1,no,yes,missing start codon,no
+407,fosB,CDS-gene,1916662,1917097,1,no,yes,missing start codon,no
+408,spo0D,CDS-gene,1922840,1923014,-1,no,yes,missing stop and start codon,no
+409,ynzL,CDS-gene,1930073,1930199,1,no,yes,missing start codon,no
+410,parE,CDS-gene,1933476,1935444,1,no,yes,missing start codon,no
+411,parC,CDS-gene,1935447,1937868,1,no,yes,missing start codon,no
+412,ynfE,CDS-gene,1942191,1942455,1,no,yes,missing start codon,no
+413,yngC,CDS-gene,1947667,1948264,1,no,yes,missing start codon,no
+414,ldeJ,CDS-gene,1956217,1957360,-1,no,yes,missing stop and start codon,no
+415,ynzE,CDS-gene,1957450,1957756,-1,no,yes,missing stop and start codon,no
+416,ppsE,CDS-gene,1960197,1964037,-1,no,yes,missing stop and start codon,no
+417,ppsA,CDS-gene,1990271,1997957,-1,no,yes,missing stop and start codon,no
+418,ftsR,CDS-gene,2006540,2007398,-1,no,yes,missing stop and start codon,no
+419,proJ,CDS-gene,2015732,2016848,-1,no,yes,missing stop and start codon,no
+420,yoxD,CDS-gene,2018553,2019270,-1,no,yes,missing stop and start codon,no
+421,yozQ,CDS-gene,2029019,2029313,1,no,yes,missing start codon,no
+422,yoaK,CDS-gene,2033894,2034572,-1,no,yes,missing stop and start codon,no
+423,yoaQ,CDS-gene,2040672,2041029,1,no,yes,missing start codon,no
+424,yozT,CDS-gene,2040987,2041227,-1,no,yes,missing stop and start codon,no
+425,yozF,CDS-gene,2041329,2041827,-1,no,yes,missing stop and start codon,no
+426,yoaW,CDS-gene,2046979,2047411,-1,no,yes,missing stop and start codon,no
+427,yobB,CDS-gene,2050688,2050952,1,no,yes,missing start codon,no
+428,yozH,CDS-gene,2056649,2057006,-1,no,yes,missing stop and start codon,no
+429,yozY,CDS-gene,2060816,2061077,1,no,yes,missing start codon,no
+430,yobI,CDS-gene,2065423,2069029,-1,no,yes,missing stop and start codon,no
+431,yobJ,CDS-gene,2070243,2071086,-1,no,yes,missing stop and start codon,no
+432,yobM,CDS-gene,2073657,2074215,-1,no,yes,missing stop and start codon,no
+433,yobN,CDS-gene,2074342,2075779,1,no,yes,missing start codon,no
+434,yobQ,CDS-gene,2079610,2080336,-1,no,yes,missing stop and start codon,no
+435,yocA,CDS-gene,2085302,2085980,1,no,yes,missing start codon,no
+436,yocC,CDS-gene,2087695,2088193,1,no,yes,missing start codon,no
+437,yozN,CDS-gene,2098858,2099122,1,no,yes,missing start codon,no
+438,yozO,CDS-gene,2099445,2099790,-1,no,yes,missing stop and start codon,no
+439,yocR,CDS-gene,2104933,2106271,-1,no,yes,missing stop and start codon,no
+440,ctpA,CDS-gene,2131901,2133302,-1,no,yes,missing stop and start codon,no
+441,yodH,CDS-gene,2133454,2134156,1,no,yes,missing start codon,no
+442,yodI,CDS-gene,2134243,2134495,1,no,yes,missing start codon,no
+443,pgpB,CDS-gene,2136912,2137524,-1,no,yes,missing stop and start codon,no
+444,kamA,CDS-gene,2139453,2140869,-1,no,yes,missing stop and start codon,no
+445,,CDS-gene,2145670,2145826,-1,no,yes,missing stop and start codon,no
+446,cgeC,CDS-gene,2148165,2148471,-1,no,yes,missing stop and start codon,no
+447,sprB,CDS-gene,2152085,2152262,-1,no,yes,missing stop and start codon,no
+448,yotM,CDS-gene,2152264,2152852,-1,no,yes,missing stop and start codon,no
+449,yotL,CDS-gene,2152926,2153169,1,no,yes,missing start codon,no
+450,yotK,CDS-gene,2153170,2153356,-1,no,yes,missing stop and start codon,no
+451,yotH,CDS-gene,2154076,2154250,-1,no,yes,missing stop and start codon,no
+452,,CDS-gene,2154780,2154972,1,no,yes,missing start codon,no
+453,yosX,CDS-gene,2156756,2157110,-1,no,yes,missing stop and start codon,no
+454,yosW,CDS-gene,2157340,2157682,-1,no,yes,missing stop and start codon,no
+455,yosV,CDS-gene,2157828,2158119,-1,no,yes,missing stop and start codon,no
+456,yosU,CDS-gene,2158438,2158684,1,no,yes,missing start codon,no
+457,nrdFB,CDS-gene,2159980,2161778,-1,yes,no,missing stop and start codon,no
+458,nrdEB,CDS-gene,2162107,2165614,-1,yes,no,missing stop and start codon,no
+459,nrdIB,CDS-gene,2165576,2165972,-1,no,yes,missing stop and start codon,no
+460,yosE,CDS-gene,2168113,2168461,-1,no,yes,missing stop and start codon,no
+461,yosD,CDS-gene,2168475,2168871,-1,no,yes,missing stop and start codon,no
+462,yorY,CDS-gene,2170308,2170491,-1,no,yes,missing stop and start codon,no
+463,yorX,CDS-gene,2170503,2170731,-1,no,yes,missing stop and start codon,no
+464,yorV,CDS-gene,2171138,2171357,-1,no,yes,missing stop and start codon,no
+465,mtbP,CDS-gene,2171400,2172732,-1,no,yes,missing stop and start codon,no
+466,yorT,CDS-gene,2172780,2172900,-1,no,yes,missing stop and start codon,no
+467,yorP,CDS-gene,2174103,2174319,-1,no,yes,missing stop and start codon,no
+468,yorO,CDS-gene,2174351,2174549,-1,no,yes,missing stop and start codon,no
+469,yorN,CDS-gene,2174584,2174734,-1,no,yes,missing stop and start codon,no
+470,yorM,CDS-gene,2174851,2175568,-1,no,yes,missing stop and start codon,no
+471,dpoL,CDS-gene,2175595,2179513,-1,no,yes,missing stop and start codon,no
+472,yorJ,CDS-gene,2181255,2182392,-1,no,yes,missing stop and start codon,no
+473,yorI,CDS-gene,2182407,2183922,-1,no,yes,missing stop and start codon,no
+474,yorH,CDS-gene,2183936,2184407,-1,no,yes,missing stop and start codon,no
+475,yorE,CDS-gene,2186439,2186811,-1,no,yes,missing stop and start codon,no
+476,yorD,CDS-gene,2186984,2187299,-1,no,yes,missing stop and start codon,no
+477,pghZ,CDS-gene,2189960,2190785,-1,no,yes,missing stop and start codon,no
+478,yoqV,CDS-gene,2192369,2193182,1,no,yes,missing start codon,no
+479,yoqU,CDS-gene,2193247,2193661,-1,no,yes,missing stop and start codon,no
+480,yoqO,CDS-gene,2195172,2195547,1,no,yes,missing start codon,no
+481,yoqN,CDS-gene,2195563,2195782,-1,no,yes,missing stop and start codon,no
+482,yoqL,CDS-gene,2196388,2197081,-1,no,yes,missing stop and start codon,no
+483,yoqK,CDS-gene,2197120,2197324,-1,no,yes,missing stop and start codon,no
+484,yoqC,CDS-gene,2200375,2200783,-1,no,yes,missing stop and start codon,no
+485,yoqA,CDS-gene,2201124,2201475,-1,no,yes,missing stop and start codon,no
+486,yopZ,CDS-gene,2201487,2201691,-1,no,yes,missing stop and start codon,no
+487,yopW,CDS-gene,2202380,2202716,-1,no,yes,missing stop and start codon,no
+488,yopU,CDS-gene,2203110,2203308,-1,no,yes,missing stop and start codon,no
+489,yopI,CDS-gene,2210748,2211282,-1,no,yes,missing stop and start codon,no
+490,yopG,CDS-gene,2211883,2212015,-1,no,yes,missing stop and start codon,no
+491,yoyH,CDS-gene,2212566,2212746,1,no,yes,missing start codon,no
+492,yoyI,CDS-gene,2212847,2213078,1,no,yes,missing start codon,no
+493,yopD,CDS-gene,2213082,2213478,-1,no,yes,missing stop and start codon,no
+494,yopA,CDS-gene,2215459,2216776,-1,no,yes,missing stop and start codon,no
+495,yonU,CDS-gene,2219280,2219469,-1,no,yes,missing stop and start codon,no
+496,spbT,CDS-gene,2219783,2219960,-1,no,yes,missing stop and start codon,no
+497,yonO,CDS-gene,2222573,2225093,1,no,yes,missing start codon,no
+498,,CDS-gene,2226175,2226346,1,no,yes,missing start codon,no
+499,yonD,CDS-gene,2234232,2235669,1,no,yes,missing start codon,no
+500,yonA,CDS-gene,2237320,2237791,1,no,yes,missing start codon,no
+501,yomU,CDS-gene,2240338,2241136,1,no,yes,missing start codon,no
+502,youA,CDS-gene,2241153,2241765,1,no,yes,missing start codon,no
+503,yomS,CDS-gene,2242055,2242412,1,no,yes,missing start codon,no
+504,yomQ,CDS-gene,2243641,2243992,1,no,yes,missing start codon,no
+505,yomN,CDS-gene,2244713,2245133,1,no,yes,missing start codon,no
+506,yozP,CDS-gene,2246150,2246480,-1,no,yes,missing stop and start codon,no
+507,yomL,CDS-gene,2246655,2247342,-1,no,yes,missing stop and start codon,no
+508,cwlP,CDS-gene,2249153,2256011,1,no,yes,missing start codon,no
+509,yomG,CDS-gene,2256831,2259459,1,no,yes,missing start codon,no
+510,yomF,CDS-gene,2259474,2260296,1,no,yes,missing start codon,no
+511,,CDS-gene,2263250,2263469,1,no,yes,missing start codon,no
+512,sunT,CDS-gene,2267345,2269463,-1,no,yes,missing stop and start codon,no
+513,yolB,CDS-gene,2272533,2272890,-1,no,yes,missing stop and start codon,no
+514,yokJ,CDS-gene,2275199,2275697,-1,no,yes,missing stop and start codon,no
+515,yokH,CDS-gene,2277520,2278078,-1,no,yes,missing stop and start codon,no
+516,nukF,CDS-gene,2279976,2280867,1,no,yes,missing start codon,no
+517,,CDS-gene,2282504,2282639,-1,no,yes,missing stop and start codon,no
+518,sprA,CDS-gene,2284770,2286408,1,no,yes,missing start codon,no
+519,ypoP,CDS-gene,2288193,2288619,1,no,yes,missing start codon,no
+520,ypmR,CDS-gene,2290857,2291625,-1,no,yes,missing stop and start codon,no
+521,ypmP,CDS-gene,2292431,2292683,-1,no,yes,missing stop and start codon,no
+522,yplQ,CDS-gene,2295301,2295943,1,no,yes,missing start codon,no
+523,ypkP,CDS-gene,2295981,2296602,-1,no,yes,missing stop and start codon,no
+524,hdhQ,CDS-gene,2303919,2304537,-1,no,yes,missing stop and start codon,no
+525,metAA,CDS-gene,2305377,2306283,1,no,yes,missing start codon,no
+526,ugtP,CDS-gene,2306513,2307662,1,no,yes,missing start codon,no
+527,ypzA,CDS-gene,2308494,2308764,1,no,yes,missing start codon,no
+528,ypeQ,CDS-gene,2308791,2308974,-1,no,yes,missing stop and start codon,no
+529,queP,CDS-gene,2309729,2310419,1,no,yes,missing start codon,no
+530,ypvA,CDS-gene,2327487,2329413,-1,no,yes,missing stop and start codon,no
+531,ypqE,CDS-gene,2336932,2337439,-1,no,yes,missing stop and start codon,no
+532,ypqA,CDS-gene,2337576,2337996,1,no,yes,missing start codon,no
+533,yppE,CDS-gene,2338808,2339180,-1,no,yes,missing stop and start codon,no
+534,recU,CDS-gene,2340801,2341422,1,no,yes,missing start codon,no
+535,nth,CDS-gene,2344754,2345414,-1,no,yes,missing stop and start codon,no
+536,asnS,CDS-gene,2346223,2347516,-1,no,yes,missing stop and start codon,no
+537,aspB,CDS-gene,2347659,2348841,-1,no,yes,missing stop and start codon,no
+538,ypjD,CDS-gene,2360154,2360490,-1,no,yes,missing stop and start codon,no
+539,ypiA,CDS-gene,2366346,2367618,-1,no,yes,missing stop and start codon,no
+540,hisC,CDS-gene,2370414,2371497,-1,no,yes,missing stop and start codon,no
+541,trpF,CDS-gene,2373486,2374134,-1,no,yes,missing stop and start codon,no
+542,hepS,CDS-gene,2383614,2384370,-1,no,yes,missing stop and start codon,no
+543,spoIVA,CDS-gene,2386194,2387673,-1,no,yes,missing stop and start codon,no
+544,yphE,CDS-gene,2388609,2388813,-1,no,yes,missing stop and start codon,no
+545,fni,CDS-gene,2393601,2394651,-1,no,yes,missing stop and start codon,no
+546,ypbD,CDS-gene,2406292,2406862,-1,no,yes,missing stop and start codon,no
+547,gmmB,CDS-gene,2408404,2409463,-1,no,yes,missing stop and start codon,no
+548,fmnP,CDS-gene,2410016,2410589,-1,no,yes,missing stop and start codon,no
+549,aroC,CDS-gene,2412705,2413473,-1,no,yes,missing stop and start codon,no
+550,ypuF,CDS-gene,2426866,2427391,1,no,yes,missing start codon,no
+551,sipS,CDS-gene,2432315,2432870,-1,no,yes,missing stop and start codon,no
+552,ypzC,CDS-gene,2433136,2433373,1,no,yes,missing start codon,no
+553,ppiB,CDS-gene,2435359,2435791,-1,no,yes,missing stop and start codon,no
+554,ypuA,CDS-gene,2436044,2436917,1,no,yes,missing start codon,no
+555,lysA,CDS-gene,2436946,2438266,-1,no,yes,missing stop and start codon,no
+556,pupG,CDS-gene,2446417,2447233,-1,no,yes,missing stop and start codon,no
+557,ripX,CDS-gene,2448590,2449481,-1,no,yes,missing stop and start codon,no
+558,mleN,CDS-gene,2452799,2454206,-1,no,yes,missing stop and start codon,no
+559,mciZ,CDS-gene,2459140,2459263,1,no,yes,missing start codon,no
+560,yqkD,CDS-gene,2460663,2461581,1,no,yes,missing start codon,no
+561,yqkC,CDS-gene,2461620,2461860,-1,no,yes,missing stop and start codon,no
+562,yqjT,CDS-gene,2468158,2468545,-1,no,yes,missing stop and start codon,no
+563,coaA,CDS-gene,2468548,2469508,-1,no,yes,missing stop and start codon,no
+564,yqjQ,CDS-gene,2471001,2471781,-1,no,yes,missing stop and start codon,no
+565,rnz,CDS-gene,2478005,2478929,-1,no,yes,missing stop and start codon,no
+566,zwf,CDS-gene,2479155,2480625,1,no,yes,missing start codon,no
+567,oxaAB,CDS-gene,2483903,2484731,1,no,yes,missing start codon,no
+568,yqjF,CDS-gene,2484910,2485639,1,no,yes,missing start codon,no
+569,brxB,CDS-gene,2493063,2493501,-1,no,yes,missing stop and start codon,no
+570,mmgC,CDS-gene,2510805,2511945,-1,no,yes,missing stop and start codon,no
+571,yqiI,CDS-gene,2514978,2515599,-1,no,yes,missing stop and start codon,no
+572,yqiH,CDS-gene,2515613,2515907,-1,no,yes,missing stop and start codon,no
+573,,CDS-gene,2516214,2516367,1,no,yes,missing start codon,no
+574,spo0A,CDS-gene,2518022,2518826,-1,no,yes,missing stop and start codon,no
+575,recN,CDS-gene,2520556,2522287,-1,no,yes,missing stop and start codon,no
+576,dxs,CDS-gene,2523712,2525614,-1,no,yes,missing stop and start codon,no
+577,ispA,CDS-gene,2525788,2526679,-1,no,yes,missing stop and start codon,no
+578,spoIIIAE,CDS-gene,2534325,2535525,-1,no,yes,missing stop and start codon,no
+579,spoIIIAD,CDS-gene,2535543,2535945,-1,no,yes,missing stop and start codon,no
+580,spoIIIAA,CDS-gene,2536689,2537613,-1,no,yes,missing stop and start codon,no
+581,yqhS,CDS-gene,2539754,2540201,-1,no,yes,missing stop and start codon,no
+582,yqhL,CDS-gene,2544994,2545375,1,no,yes,missing start codon,no
+583,yqhG,CDS-gene,2551468,2552263,1,no,yes,missing start codon,no
+584,sinR,CDS-gene,2552652,2552988,1,no,yes,missing start codon,no
+585,spoIIT,CDS-gene,2555886,2556066,-1,no,yes,missing stop and start codon,no
+586,comGF,CDS-gene,2556511,2556895,-1,no,yes,missing stop and start codon,no
+587,comGD,CDS-gene,2557251,2557683,-1,no,yes,missing stop and start codon,no
+588,comGA,CDS-gene,2559006,2560077,-1,no,yes,missing stop and start codon,no
+589,yqgX,CDS-gene,2564922,2565558,-1,no,yes,missing stop and start codon,no
+590,yqgM,CDS-gene,2574640,2575720,-1,no,yes,missing stop and start codon,no
+591,yqzD,CDS-gene,2576366,2576720,1,no,yes,missing start codon,no
+592,yqgB,CDS-gene,2586812,2587580,1,no,yes,missing start codon,no
+593,ispG,CDS-gene,2589122,2590256,1,no,yes,missing start codon,no
+594,yqfX,CDS-gene,2590281,2590671,-1,no,yes,missing stop and start codon,no
+595,nfo,CDS-gene,2593280,2594174,-1,no,yes,missing stop and start codon,no
+596,antE,CDS-gene,2602978,2603275,1,no,yes,missing start codon,no
+597,ccpN,CDS-gene,2604958,2605597,-1,no,yes,missing stop and start codon,no
+598,yqzL,CDS-gene,2609749,2609893,-1,no,yes,missing stop and start codon,no
+599,pgpH,CDS-gene,2612281,2614417,-1,no,yes,missing stop and start codon,no
+600,yqfD,CDS-gene,2615451,2616648,-1,no,yes,missing stop and start codon,no
+601,nfeDA,CDS-gene,2618465,2619779,-1,no,yes,missing stop and start codon,no
+602,prmA,CDS-gene,2623824,2624760,-1,no,yes,missing stop and start codon,no
+603,dnaK,CDS-gene,2626111,2627947,-1,no,yes,missing stop and start codon,no
+604,hemN,CDS-gene,2629717,2630857,-1,no,yes,missing stop and start codon,no
+605,lepA,CDS-gene,2630909,2632748,-1,no,yes,missing stop and start codon,no
+606,yqxA,CDS-gene,2632881,2633220,-1,no,yes,missing stop and start codon,no
+607,,CDS-gene,2637178,2637328,-1,no,yes,missing stop and start codon,no
+608,yqzM,CDS-gene,2637368,2637503,1,no,yes,missing start codon,no
+609,comEB,CDS-gene,2639876,2640446,-1,no,yes,missing stop and start codon,no
+610,comER,CDS-gene,2641213,2642035,1,no,yes,missing start codon,no
+611,yqeG,CDS-gene,2646593,2647112,-1,no,yes,missing stop and start codon,no
+612,sda,CDS-gene,2647455,2647614,1,no,yes,missing start codon,no
+613,spoIVCA,CDS-gene,2653370,2654873,-1,no,yes,missing stop and start codon,no
+614,yqcI,CDS-gene,2658005,2658770,-1,no,yes,missing stop and start codon,no
+615,rapE,CDS-gene,2659212,2660340,1,no,yes,missing start codon,no
+616,yqzI,CDS-gene,2660573,2660732,1,no,yes,missing start codon,no
+617,yqxJ,CDS-gene,2663550,2663913,-1,no,yes,missing stop and start codon,no
+618,yqcA,CDS-gene,2668761,2669340,-1,no,yes,missing stop and start codon,no
+619,yqbP,CDS-gene,2672053,2672713,-1,no,yes,missing stop and start codon,no
+620,yqbF,CDS-gene,2682884,2683196,-1,no,yes,missing stop and start codon,no
+621,yqaT,CDS-gene,2688305,2689601,-1,no,yes,missing stop and start codon,no
+622,yqaR,CDS-gene,2690380,2690845,-1,no,yes,missing stop and start codon,no
+623,yqaO,CDS-gene,2692644,2692851,-1,no,yes,missing stop and start codon,no
+624,yqaN,CDS-gene,2692932,2693361,-1,no,yes,missing stop and start codon,no
+625,yqzO,CDS-gene,2693456,2693606,-1,no,yes,missing stop and start codon,no
+626,yqaL,CDS-gene,2694419,2695097,-1,no,yes,missing stop and start codon,no
+627,yqaB,CDS-gene,2700837,2701356,1,no,yes,missing start codon,no
+628,yrkQ,CDS-gene,2703149,2704448,-1,no,yes,missing stop and start codon,no
+629,yrkK,CDS-gene,2708942,2709419,-1,no,yes,missing stop and start codon,no
+630,yrkH,CDS-gene,2711108,2712242,-1,no,yes,missing stop and start codon,no
+631,,CDS-gene,2715509,2715686,-1,no,yes,missing stop and start codon,no
+632,yrkA,CDS-gene,2718958,2720263,-1,no,yes,missing stop and start codon,no
+633,yrdP,CDS-gene,2722766,2723804,-1,no,yes,missing stop and start codon,no
+634,azlC,CDS-gene,2728975,2729740,-1,no,yes,missing stop and start codon,no
+635,yrdC,CDS-gene,2732979,2733543,-1,no,yes,missing stop and start codon,no
+636,yrdB,CDS-gene,2733771,2734143,-1,no,yes,missing stop and start codon,no
+637,yrdA,CDS-gene,2734952,2735456,-1,no,yes,missing stop and start codon,no
+638,yrpG,CDS-gene,2742908,2743889,1,no,yes,missing start codon,no
+639,yraJ,CDS-gene,2750882,2751239,-1,no,yes,missing stop and start codon,no
+640,yraI,CDS-gene,2751291,2751651,-1,no,yes,missing stop and start codon,no
+641,,CDS-gene,2751922,2752024,-1,no,yes,missing stop and start codon,no
+642,yraF,CDS-gene,2753064,2753433,1,no,yes,missing start codon,no
+643,,CDS-gene,2759984,2760152,-1,no,yes,missing stop and start codon,no
+644,levR,CDS-gene,2763024,2765832,-1,no,yes,missing stop and start codon,no
+645,aapA,CDS-gene,2766557,2767946,1,no,yes,missing start codon,no
+646,yrhC,CDS-gene,2784687,2784918,-1,no,yes,missing stop and start codon,no
+647,yrrS,CDS-gene,2788919,2789621,-1,no,yes,missing stop and start codon,no
+648,yrrM,CDS-gene,2795081,2795735,-1,no,yes,missing stop and start codon,no
+649,yrzL,CDS-gene,2797822,2798089,-1,no,yes,missing stop and start codon,no
+650,glnP,CDS-gene,2804656,2805313,1,no,yes,missing start codon,no
+651,recDB,CDS-gene,2806285,2808682,-1,no,yes,missing stop and start codon,no
+652,cymR,CDS-gene,2811716,2812133,-1,no,yes,missing stop and start codon,no
+653,tcdA,CDS-gene,2813642,2814407,-1,no,yes,missing stop and start codon,no
+654,aspS,CDS-gene,2814742,2816521,-1,no,yes,missing stop and start codon,no
+655,dtd,CDS-gene,2820076,2820475,-1,no,yes,missing stop and start codon,no
+656,comN,CDS-gene,2829151,2829448,-1,no,yes,missing stop and start codon,no
+657,tgt,CDS-gene,2832726,2833872,-1,no,yes,missing stop and start codon,no
+658,ruvA,CDS-gene,2836164,2836770,-1,no,yes,missing stop and start codon,no
+659,bofC,CDS-gene,2836908,2837421,-1,no,yes,missing stop and start codon,no
+660,sgpA,CDS-gene,2843930,2844527,-1,no,yes,missing stop and start codon,no
+661,safA,CDS-gene,2844674,2845838,-1,no,yes,missing stop and start codon,no
+662,niaR,CDS-gene,2850715,2851258,1,no,yes,missing start codon,no
+663,,CDS-gene,2854636,2854759,1,no,yes,missing start codon,no
+664,spoIVFB,CDS-gene,2855972,2856839,-1,no,yes,missing stop and start codon,no
+665,minD,CDS-gene,2857775,2858582,-1,no,yes,missing stop and start codon,no
+666,minC,CDS-gene,2858583,2859264,-1,no,yes,missing stop and start codon,no
+667,mreD,CDS-gene,2859316,2859835,-1,no,yes,missing stop and start codon,no
+668,ysxA,CDS-gene,2861839,2862535,-1,no,yes,missing stop and start codon,no
+669,spoIIB,CDS-gene,2863293,2864292,-1,no,yes,missing stop and start codon,no
+670,folC,CDS-gene,2865311,2866604,-1,no,yes,missing stop and start codon,no
+671,yszA,CDS-gene,2869753,2869945,1,no,yes,missing start codon,no
+672,spoVID,CDS-gene,2871021,2872749,-1,no,yes,missing stop and start codon,no
+673,leuB,CDS-gene,2891019,2892117,-1,no,yes,missing stop and start codon,no
+674,leuA,CDS-gene,2892137,2893694,-1,no,yes,missing stop and start codon,no
+675,ilvH,CDS-gene,2894732,2895251,-1,no,yes,missing stop and start codon,no
+676,ysnE,CDS-gene,2898291,2898747,1,no,yes,missing start codon,no
+677,rdgB,CDS-gene,2900544,2901141,-1,no,yes,missing stop and start codon,no
+678,rcmE,CDS-gene,2903216,2904035,-1,no,yes,missing stop and start codon,no
+679,gerE,CDS-gene,2904726,2904951,-1,no,yes,missing stop and start codon,no
+680,fadR,CDS-gene,2917956,2918541,-1,no,yes,missing stop and start codon,no
+681,mutSB,CDS-gene,2920935,2923293,-1,no,yes,missing stop and start codon,no
+682,zapA,CDS-gene,2925639,2925897,-1,no,yes,missing stop and start codon,no
+683,rnhC,CDS-gene,2926030,2926972,1,no,yes,missing start codon,no
+684,,CDS-gene,2930553,2930760,1,no,yes,missing start codon,no
+685,rlmBB,CDS-gene,2930826,2931573,-1,no,yes,missing stop and start codon,no
+686,ysfE,CDS-gene,2935966,2936209,-1,no,yes,missing stop and start codon,no
+687,abnA,CDS-gene,2949052,2950024,-1,no,yes,missing stop and start codon,no
+688,infC,CDS-gene,2952827,2953349,-1,no,yes,missing stop and start codon,no
+689,nrdR,CDS-gene,2965680,2966139,-1,no,yes,missing stop and start codon,no
+690,coaE,CDS-gene,2970921,2971515,-1,no,yes,missing stop and start codon,no
+691,mutM,CDS-gene,2972328,2973159,-1,no,yes,missing stop and start codon,no
+692,icd,CDS-gene,2979715,2980987,-1,no,yes,missing stop and start codon,no
+693,ytwI,CDS-gene,2982602,2983067,-1,no,yes,missing stop and start codon,no
+694,ytvI,CDS-gene,2983163,2984279,1,no,yes,missing start codon,no
+695,accA,CDS-gene,2987730,2988708,-1,no,yes,missing stop and start codon,no
+696,accD,CDS-gene,2988692,2989565,-1,no,yes,missing stop and start codon,no
+697,ytoI,CDS-gene,2997300,2998620,-1,no,yes,missing stop and start codon,no
+698,ribR,CDS-gene,3000984,3001677,-1,no,yes,missing stop and start codon,no
+699,tcyM,CDS-gene,3005121,3005829,-1,no,yes,missing stop and start codon,no
+700,ascR,CDS-gene,3008937,3009864,1,no,yes,missing start codon,no
+701,ytkK,CDS-gene,3010660,3011428,-1,no,yes,missing stop and start codon,no
+702,ytzD,CDS-gene,3011554,3011791,-1,no,yes,missing stop and start codon,no
+703,,CDS-gene,3016470,3016674,-1,no,yes,missing stop and start codon,no
+704,ytcI,CDS-gene,3023676,3025266,-1,no,yes,missing stop and start codon,no
+705,acuA,CDS-gene,3040091,3040724,1,no,yes,missing start codon,no
+706,ytpQ,CDS-gene,3053363,3054173,-1,no,yes,missing stop and start codon,no
+707,ytzB,CDS-gene,3056478,3056796,1,no,yes,missing start codon,no
+708,maeC,CDS-gene,3056848,3058549,-1,no,yes,missing stop and start codon,no
+709,ythP,CDS-gene,3071399,3072110,-1,no,yes,missing stop and start codon,no
+710,ytzE,CDS-gene,3072400,3072622,1,no,yes,missing start codon,no
+711,rmgT,CDS-gene,3079332,3080619,-1,no,yes,missing stop and start codon,no
+712,ytcP,CDS-gene,3087320,3088181,-1,no,yes,missing stop and start codon,no
+713,ytbQ,CDS-gene,3088387,3089149,-1,no,yes,missing stop and start codon,no
+714,bioI,CDS-gene,3089225,3090413,-1,no,yes,missing stop and start codon,no
+715,bioD,CDS-gene,3091491,3092187,-1,no,yes,missing stop and start codon,no
+716,bioFC,CDS-gene,3092183,3093353,-1,no,yes,missing stop and start codon,no
+717,ytwF,CDS-gene,3102200,3102512,-1,no,yes,missing stop and start codon,no
+718,leuS,CDS-gene,3102628,3105043,-1,no,yes,missing stop and start codon,no
+719,bceR,CDS-gene,3113186,3113882,-1,no,yes,missing stop and start codon,no
+720,ytrF,CDS-gene,3113978,3115289,-1,no,yes,missing stop and start codon,no
+721,ytrD,CDS-gene,3115988,3116966,-1,no,yes,missing stop and start codon,no
+722,ytzC,CDS-gene,3119564,3119837,-1,no,yes,missing stop and start codon,no
+723,ytqA,CDS-gene,3119998,3120967,1,no,yes,missing start codon,no
+724,tbcS,CDS-gene,3121537,3122641,-1,no,yes,missing stop and start codon,no
+725,ytmB,CDS-gene,3131151,3131394,-1,no,yes,missing stop and start codon,no
+726,ytmA,CDS-gene,3131445,3132219,-1,no,yes,missing stop and start codon,no
+727,ytlA,CDS-gene,3132369,3133374,1,no,yes,missing start codon,no
+728,ytlD,CDS-gene,3134143,3134956,1,no,yes,missing start codon,no
+729,ythA,CDS-gene,3139430,3140762,1,no,yes,missing start codon,no
+730,menD,CDS-gene,3150562,3152305,-1,no,yes,missing stop and start codon,no
+731,yteA,CDS-gene,3154006,3154726,1,no,yes,missing start codon,no
+732,cotS,CDS-gene,3159690,3160746,-1,no,yes,missing stop and start codon,no
+733,glgA,CDS-gene,3166117,3167572,-1,no,yes,missing stop and start codon,no
+734,glgD,CDS-gene,3167568,3168600,-1,no,yes,missing stop and start codon,no
+735,nfeDB,CDS-gene,3182014,3182539,-1,no,yes,missing stop and start codon,no
+736,ktrA,CDS-gene,3188413,3189082,1,no,yes,missing start codon,no
+737,ktrB,CDS-gene,3189088,3190426,1,no,yes,missing start codon,no
+738,yubF,CDS-gene,3190461,3190725,-1,no,yes,missing stop and start codon,no
+739,yubA,CDS-gene,3195557,3196724,-1,no,yes,missing stop and start codon,no
+740,iolU,CDS-gene,3196905,3197892,1,no,yes,missing start codon,no
+741,rhaM,CDS-gene,3199232,3199547,-1,no,yes,missing stop and start codon,no
+742,,CDS-gene,3214211,3214346,-1,no,yes,missing stop and start codon,no
+743,yugS,CDS-gene,3216162,3217452,-1,no,yes,missing stop and start codon,no
+744,kapD,CDS-gene,3231811,3232429,-1,no,yes,missing stop and start codon,no
+745,yuxJ,CDS-gene,3232639,3233818,1,no,yes,missing start codon,no
+746,pbpD,CDS-gene,3233910,3235785,1,no,yes,missing start codon,no
+747,yuxK,CDS-gene,3235805,3236219,1,no,yes,missing start codon,no
+748,nupN,CDS-gene,3239929,3241009,1,no,yes,missing start codon,no
+749,nupQ,CDS-gene,3243656,3244616,1,no,yes,missing start codon,no
+750,yufS,CDS-gene,3246151,3246367,-1,no,yes,missing stop and start codon,no
+751,mrpA,CDS-gene,3246597,3249003,1,no,yes,missing start codon,no
+752,mrpB,CDS-gene,3248995,3249427,1,no,yes,missing start codon,no
+753,comP,CDS-gene,3253528,3255838,-1,no,yes,missing stop and start codon,no
+754,,CDS-gene,3257453,3257579,1,no,yes,missing start codon,no
+755,pncB,CDS-gene,3259402,3260875,-1,no,yes,missing stop and start codon,no
+756,yueI,CDS-gene,3261538,3261937,-1,no,yes,missing stop and start codon,no
+757,yueF,CDS-gene,3262610,3263720,-1,no,yes,missing stop and start codon,no
+758,yukAB,CDS-gene,3269913,3274401,-1,no,yes,missing stop and start codon,no
+759,yuiB,CDS-gene,3299343,3299664,-1,no,yes,missing stop and start codon,no
+760,yuzD,CDS-gene,3309959,3310286,-1,no,yes,missing stop and start codon,no
+761,hom,CDS-gene,3314827,3316129,-1,no,yes,missing stop and start codon,no
+762,lipA,CDS-gene,3320323,3321220,-1,no,yes,missing stop and start codon,no
+763,lytH,CDS-gene,3321454,3322435,1,no,yes,missing start codon,no
+764,fisB,CDS-gene,3322462,3323227,-1,no,yes,missing stop and start codon,no
+765,yunC,CDS-gene,3323299,3323605,-1,no,yes,missing stop and start codon,no
+766,yunF,CDS-gene,3325916,3326765,-1,no,yes,missing stop and start codon,no
+767,pucJ,CDS-gene,3330501,3331851,1,no,yes,missing start codon,no
+768,pucC,CDS-gene,3338500,3339334,-1,no,yes,missing stop and start codon,no
+769,pucA,CDS-gene,3339944,3340937,-1,no,yes,missing stop and start codon,no
+770,pucG,CDS-gene,3341165,3342416,-1,no,yes,missing stop and start codon,no
+771,frlR,CDS-gene,3346297,3347026,1,no,yes,missing start codon,no
+772,frlN,CDS-gene,3348824,3349703,-1,no,yes,missing stop and start codon,no
+773,frlO,CDS-gene,3349760,3351029,-1,no,yes,missing stop and start codon,no
+774,frlB,CDS-gene,3351109,3352096,-1,no,yes,missing stop and start codon,no
+775,yurQ,CDS-gene,3352311,3352686,-1,no,yes,missing stop and start codon,no
+776,metQ,CDS-gene,3361766,3362591,-1,no,yes,missing stop and start codon,no
+777,metN,CDS-gene,3363265,3364291,-1,no,yes,missing stop and start codon,no
+778,gcvH,CDS-gene,3366122,3366506,-1,no,yes,missing stop and start codon,no
+779,yusR,CDS-gene,3377018,3377408,-1,no,yes,missing stop and start codon,no
+780,yusU,CDS-gene,3378799,3379087,-1,no,yes,missing stop and start codon,no
+781,cssR,CDS-gene,3385723,3386401,1,no,yes,missing start codon,no
+782,yuxN,CDS-gene,3388112,3388988,1,no,yes,missing start codon,no
+783,yvzF,CDS-gene,3390478,3390664,-1,no,yes,missing stop and start codon,no
+784,gerAA,CDS-gene,3390781,3392230,1,no,yes,missing start codon,no
+785,liaR,CDS-gene,3394421,3395057,-1,no,yes,missing stop and start codon,no
+786,yvrB,CDS-gene,3402468,3403530,-1,no,yes,missing stop and start codon,no
+787,yvrH,CDS-gene,3408352,3409066,-1,no,yes,missing stop and start codon,no
+788,rsoA,CDS-gene,3409218,3409458,-1,no,yes,missing stop and start codon,no
+789,yvrJ,CDS-gene,3410006,3410345,1,no,yes,missing start codon,no
+790,rsiO,CDS-gene,3411683,3412094,1,no,yes,missing start codon,no
+791,yvrP,CDS-gene,3414022,3415216,-1,no,yes,missing stop and start codon,no
+792,modB,CDS-gene,3426025,3426718,1,no,yes,missing start codon,no
+793,pgoN,CDS-gene,3426748,3427579,-1,no,yes,missing stop and start codon,no
+794,yvgO,CDS-gene,3427801,3428287,1,no,yes,missing start codon,no
+795,nhaK,CDS-gene,3428330,3430343,-1,no,yes,missing stop and start codon,no
+796,cysJ,CDS-gene,3432338,3434156,-1,no,yes,missing stop and start codon,no
+797,bdbD,CDS-gene,3438064,3438733,-1,no,yes,missing stop and start codon,no
+798,cadA,CDS-gene,3438852,3440961,-1,no,yes,missing stop and start codon,no
+799,copA,CDS-gene,3441120,3443529,-1,no,yes,missing stop and start codon,no
+800,iolW,CDS-gene,3444328,3445405,1,no,yes,missing start codon,no
+801,yvzC,CDS-gene,3456281,3456515,-1,no,yes,missing stop and start codon,no
+802,opuBA,CDS-gene,3462104,3463250,-1,no,yes,missing stop and start codon,no
+803,yvaV,CDS-gene,3463533,3464067,1,no,yes,missing start codon,no
+804,spbC,CDS-gene,3465775,3466387,1,no,yes,missing start codon,no
+805,opuCA,CDS-gene,3469859,3471002,-1,no,yes,missing stop and start codon,no
+806,opcR,CDS-gene,3471265,3471823,1,no,yes,missing start codon,no
+807,yvfS,CDS-gene,3497613,3498351,-1,no,yes,missing stop and start codon,no
+808,yvfR,CDS-gene,3498351,3499257,-1,no,yes,missing stop and start codon,no
+809,ganA,CDS-gene,3503019,3505083,-1,no,yes,missing stop and start codon,no
+810,ganP,CDS-gene,3505956,3507213,-1,no,yes,missing stop and start codon,no
+811,epsL,CDS-gene,3516879,3517488,-1,no,yes,missing stop and start codon,no
+812,epsB,CDS-gene,3528461,3529145,-1,no,yes,missing stop and start codon,no
+813,psmA,CDS-gene,3541487,3541823,1,no,yes,missing start codon,no
+814,cotR,CDS-gene,3544641,3545604,1,no,yes,missing start codon,no
+815,mdxG,CDS-gene,3552368,3553205,-1,no,yes,missing stop and start codon,no
+816,yvdC,CDS-gene,3559631,3559952,1,no,yes,missing start codon,no
+817,yvcT,CDS-gene,3562565,3563543,1,no,yes,missing start codon,no
+818,psdR,CDS-gene,3567421,3568135,-1,no,yes,missing stop and start codon,no
+819,yvcN,CDS-gene,3568526,3569291,-1,no,yes,missing stop and start codon,no
+820,yvcI,CDS-gene,3572412,3572889,-1,no,yes,missing stop and start codon,no
+821,trxB,CDS-gene,3573206,3574157,-1,no,yes,missing stop and start codon,no
+822,cwlO,CDS-gene,3574362,3575784,-1,no,yes,missing stop and start codon,no
+823,yvcD,CDS-gene,3576164,3577619,-1,no,yes,missing stop and start codon,no
+824,yvzA,CDS-gene,3579678,3580038,-1,no,yes,missing stop and start codon,no
+825,pelC,CDS-gene,3590602,3591268,1,no,yes,missing start codon,no
+826,hprF,CDS-gene,3591287,3591806,-1,no,yes,missing stop and start codon,no
+827,hprK,CDS-gene,3594241,3595174,-1,no,yes,missing stop and start codon,no
+828,pchE,CDS-gene,3605522,3606734,1,no,yes,missing start codon,no
+829,yvlA,CDS-gene,3608446,3608773,-1,no,yes,missing stop and start codon,no
+830,uvrB,CDS-gene,3612944,3614930,-1,no,yes,missing stop and start codon,no
+831,csbA,CDS-gene,3615115,3615346,-1,no,yes,missing stop and start codon,no
+832,yvkB,CDS-gene,3618363,3618933,1,no,yes,missing start codon,no
+833,minJ,CDS-gene,3620345,3621539,-1,no,yes,missing stop and start codon,no
+834,prfB,CDS-gene,3627138,3628240,-1,yes,no,missing stop and start codon,no
+835,yvzG,CDS-gene,3631762,3632140,-1,no,yes,missing stop and start codon,no
+836,yvyC,CDS-gene,3634424,3634754,-1,no,yes,missing stop and start codon,no
+837,comFA,CDS-gene,3642166,3643558,-1,no,yes,missing stop and start codon,no
+838,degU,CDS-gene,3644606,3645296,-1,no,yes,missing stop and start codon,no
+839,tuaH,CDS-gene,3649874,3651068,-1,no,yes,missing stop and start codon,no
+840,tuaE,CDS-gene,3652587,3654054,-1,no,yes,missing stop and start codon,no
+841,tuaD,CDS-gene,3654138,3655524,-1,no,yes,missing stop and start codon,no
+842,lytC,CDS-gene,3659118,3660609,-1,no,yes,missing stop and start codon,no
+843,lytB,CDS-gene,3660647,3662765,-1,no,yes,missing stop and start codon,no
+844,,CDS-gene,3666840,3667059,1,no,yes,missing start codon,no
+845,tagE,CDS-gene,3678398,3680420,-1,no,yes,missing stop and start codon,no
+846,pgdS,CDS-gene,3696256,3697498,-1,no,yes,missing stop and start codon,no
+847,rbsR,CDS-gene,3701410,3702391,1,no,yes,missing start codon,no
+848,alsS,CDS-gene,3709627,3711340,-1,no,yes,missing stop and start codon,no
+849,ywrK,CDS-gene,3712616,3713945,1,no,yes,missing start codon,no
+850,ywrJ,CDS-gene,3714001,3714679,-1,no,yes,missing stop and start codon,no
+851,cotG,CDS-gene,3717237,3717825,1,no,yes,missing start codon,no
+852,chrS,CDS-gene,3720924,3721401,1,no,yes,missing start codon,no
+853,ywqM,CDS-gene,3723453,3724335,1,no,yes,missing start codon,no
+854,ptkA,CDS-gene,3731821,3732535,-1,no,yes,missing stop and start codon,no
+855,ywpJ,CDS-gene,3738342,3739200,-1,no,yes,missing stop and start codon,no
+856,glcR,CDS-gene,3739205,3739982,-1,no,yes,missing stop and start codon,no
+857,flhO,CDS-gene,3746278,3747091,-1,no,yes,missing stop and start codon,no
+858,spoIIID,CDS-gene,3748420,3748702,-1,no,yes,missing stop and start codon,no
+859,usd,CDS-gene,3748716,3748827,-1,no,yes,missing stop and start codon,no
+860,ywoG,CDS-gene,3749486,3750677,1,no,yes,missing start codon,no
+861,bcrC,CDS-gene,3758546,3759128,1,no,yes,missing start codon,no
+862,clsA,CDS-gene,3762663,3764112,1,no,yes,missing start codon,no
+863,fdhD,CDS-gene,3773365,3774154,-1,no,yes,missing stop and start codon,no
+864,murAA,CDS-gene,3777948,3779259,-1,no,yes,missing stop and start codon,no
+865,ywmA,CDS-gene,3780561,3781035,1,no,yes,missing start codon,no
+866,atpG,CDS-gene,3782937,3783801,-1,no,yes,missing stop and start codon,no
+867,atpA,CDS-gene,3783877,3785386,-1,no,yes,missing stop and start codon,no
+868,atpB,CDS-gene,3786877,3787612,-1,no,yes,missing stop and start codon,no
+869,prfA,CDS-gene,3797084,3798155,-1,no,yes,missing stop and start codon,no
+870,ywkB,CDS-gene,3799376,3800336,-1,no,yes,missing stop and start codon,no
+871,rpoE,CDS-gene,3812541,3813063,-1,no,yes,missing stop and start codon,no
+872,ywjA,CDS-gene,3819753,3821481,-1,no,yes,missing stop and start codon,no
+873,narH,CDS-gene,3824805,3826269,-1,no,yes,missing stop and start codon,no
+874,sboX,CDS-gene,3836145,3836298,1,no,yes,missing start codon,no
+875,albA,CDS-gene,3836322,3837669,1,no,yes,missing start codon,no
+876,albB,CDS-gene,3837681,3837843,1,no,yes,missing start codon,no
+877,albE,CDS-gene,3839851,3841012,1,no,yes,missing start codon,no
+878,rapF,CDS-gene,3846000,3847146,1,no,yes,missing start codon,no
+879,speE,CDS-gene,3848785,3849616,-1,no,yes,missing stop and start codon,no
+880,pbpG,CDS-gene,3849817,3851893,1,no,yes,missing start codon,no
+881,ywhC,CDS-gene,3852717,3853377,-1,no,yes,missing stop and start codon,no
+882,ywgA,CDS-gene,3858998,3859499,-1,no,yes,missing stop and start codon,no
+883,cysL,CDS-gene,3864308,3865208,-1,no,yes,missing stop and start codon,no
+884,pta,CDS-gene,3865354,3866326,-1,no,yes,missing stop and start codon,no
+885,bacG,CDS-gene,3867492,3868272,1,no,yes,missing start codon,no
+886,spsL,CDS-gene,3882978,3883434,-1,no,yes,missing stop and start codon,no
+887,spsK,CDS-gene,3883426,3884278,-1,no,yes,missing stop and start codon,no
+888,spsI,CDS-gene,3885238,3885979,-1,no,yes,missing stop and start codon,no
+889,spsD,CDS-gene,3888861,3889731,-1,no,yes,missing stop and start codon,no
+890,spsB,CDS-gene,3890921,3892346,-1,no,yes,missing stop and start codon,no
+891,spsA,CDS-gene,3892350,3893121,-1,no,yes,missing stop and start codon,no
+892,ywdJ,CDS-gene,3894462,3895785,-1,no,yes,missing stop and start codon,no
+893,ung,CDS-gene,3897684,3898362,-1,no,yes,missing stop and start codon,no
+894,ywdE,CDS-gene,3899271,3899805,-1,no,yes,missing stop and start codon,no
+895,ywdA,CDS-gene,3901867,3902116,-1,no,yes,missing stop and start codon,no
+896,sacT,CDS-gene,3906141,3906972,-1,no,yes,missing stop and start codon,no
+897,vpr,CDS-gene,3907843,3910264,1,no,yes,missing start codon,no
+898,qoxA,CDS-gene,3917295,3918261,-1,no,yes,missing stop and start codon,no
+899,cidB,CDS-gene,3933576,3934254,1,no,yes,missing start codon,no
+900,sacX,CDS-gene,3942233,3943613,1,no,yes,missing start codon,no
+901,gspA,CDS-gene,3944559,3945420,-1,no,yes,missing stop and start codon,no
+902,ywaF,CDS-gene,3945529,3946243,-1,no,yes,missing stop and start codon,no
+903,licA,CDS-gene,3959840,3960173,-1,no,yes,missing stop and start codon,no
+904,licC,CDS-gene,3960191,3961550,-1,no,yes,missing stop and start codon,no
+905,aag,CDS-gene,3964277,3964868,-1,no,yes,missing stop and start codon,no
+906,katX,CDS-gene,3964996,3966640,1,no,yes,missing start codon,no
+907,sigY,CDS-gene,3970311,3970848,-1,no,yes,missing stop and start codon,no
+908,yxlA,CDS-gene,3971059,3972433,1,no,yes,missing start codon,no
+909,yxzE,CDS-gene,3982972,3983173,1,no,yes,missing start codon,no
+910,yxjJ,CDS-gene,3996828,3997092,1,no,yes,missing start codon,no
+911,scoB,CDS-gene,4001328,4001979,-1,no,yes,missing stop and start codon,no
+912,yxjC,CDS-gene,4002715,4004134,-1,no,yes,missing stop and start codon,no
+913,yxzJ,CDS-gene,4019004,4019136,-1,no,yes,missing stop and start codon,no
+914,yxiJ,CDS-gene,4019624,4019921,-1,no,yes,missing stop and start codon,no
+915,yxzG,CDS-gene,4020454,4020907,-1,no,yes,missing stop and start codon,no
+916,yxzC,CDS-gene,4021895,4022264,-1,no,yes,missing stop and start codon,no
+917,rtbD,CDS-gene,4036783,4038493,-1,no,yes,missing stop and start codon,no
+918,hutG,CDS-gene,4046502,4047462,1,no,yes,missing start codon,no
+919,hutM,CDS-gene,4047537,4048965,1,no,yes,missing start codon,no
+920,yxeO,CDS-gene,4058028,4058778,-1,no,yes,missing stop and start codon,no
+921,tpeJ,CDS-gene,4072283,4072973,-1,no,yes,missing stop and start codon,no
+922,iolD,CDS-gene,4079082,4080996,-1,no,yes,missing stop and start codon,no
+923,csbC,CDS-gene,4088001,4089387,1,no,yes,missing start codon,no
+924,htpG,CDS-gene,4089428,4091309,-1,no,yes,missing stop and start codon,no
+925,yxcA,CDS-gene,4091476,4091728,-1,no,yes,missing stop and start codon,no
+926,yxbF,CDS-gene,4092694,4093837,-1,no,yes,missing stop and start codon,no
+927,yxnB,CDS-gene,4098422,4098905,1,no,yes,missing start codon,no
+928,yxaD,CDS-gene,4109184,4109616,-1,no,yes,missing stop and start codon,no
+929,yxzK,CDS-gene,4109842,4110247,1,no,yes,missing start codon,no
+930,ahpF,CDS-gene,4119526,4121056,1,no,yes,missing start codon,no
+931,fbp,CDS-gene,4128118,4130044,1,no,yes,missing start codon,no
+932,yydD,CDS-gene,4130577,4132338,-1,no,yes,missing stop and start codon,no
+933,yydB,CDS-gene,4132728,4134174,-1,no,yes,missing stop and start codon,no
+934,rlmH,CDS-gene,4134435,4134915,-1,no,yes,missing stop and start codon,no
+935,yycS,CDS-gene,4135350,4135764,1,no,yes,missing start codon,no
+936,rocE,CDS-gene,4142674,4144078,-1,no,yes,missing stop and start codon,no
+937,rocR,CDS-gene,4145746,4147132,1,no,yes,missing start codon,no
+938,,CDS-gene,4147418,4147547,-1,no,yes,missing stop and start codon,no
+939,walI,CDS-gene,4149666,4150509,-1,no,yes,missing stop and start codon,no
+940,yycC,CDS-gene,4159576,4159717,1,no,yes,missing start codon,no
+941,yycB,CDS-gene,4159789,4160998,1,no,yes,missing start codon,no
+942,yybS,CDS-gene,4165658,4166588,-1,no,yes,missing stop and start codon,no
+943,,CDS-gene,4171800,4171986,-1,no,yes,missing stop and start codon,no
+944,ictI,CDS-gene,4176899,4177688,-1,no,yes,missing stop and start codon,no
+945,yybH,CDS-gene,4177755,4178145,-1,no,yes,missing stop and start codon,no
+946,yybG,CDS-gene,4178290,4179130,1,no,yes,missing start codon,no
+947,yybE,CDS-gene,4180563,4181442,1,no,yes,missing start codon,no
+948,yybB,CDS-gene,4182635,4183298,-1,no,yes,missing stop and start codon,no
+949,tetB,CDS-gene,4187680,4189057,-1,no,yes,missing stop and start codon,no
+950,yyzM,CDS-gene,4203123,4203330,-1,no,yes,missing stop and start codon,no
+951,yyaD,CDS-gene,4203423,4204440,-1,no,yes,missing stop and start codon,no
+952,parA,CDS-gene,4206396,4207158,-1,no,yes,missing stop and start codon,no
+953,jag,CDS-gene,4213199,4213826,-1,no,yes,missing stop and start codon,no
+954,rnpA,CDS-gene,4214752,4215103,-1,no,yes,missing stop and start codon,no
