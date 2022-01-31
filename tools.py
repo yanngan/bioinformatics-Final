@@ -48,9 +48,10 @@ def get_dictionary_of_protain_UniProt_file(fasta_path):
                 Name_dictionary_to_return[val[3:]] = protain.seq
     return GOA_dictionary_to_return,Name_dictionary_to_return
 
-def get_dictionary_of_protain_from_GB_file(file_path):
+def get_dictionary_of_protain_from_GB_file(file_path, type_to_return = "amino_acid"):
     '''
     :param: file_path: the path to the DB file
+    :param: type_to_return: the value to put in the dictionary value
     :return:  dictionary: key = GOA identifier, value = protain seq
     '''
     count_entry = 0
@@ -64,11 +65,22 @@ def get_dictionary_of_protain_from_GB_file(file_path):
             if seq_feature.type == "CDS":
                 assert len(seq_feature.qualifiers['translation']) == 1
                 count_entry += 1
-                if 'db_xref' in seq_feature.qualifiers and any("GOA" in s for s in seq_feature.qualifiers['db_xref']):
-                    GOA_dictionary_to_return[seq_feature.qualifiers['db_xref'][2].split(":")[1]] = seq_feature.qualifiers['translation'][0]
-                if seq_feature.qualifiers.get('gene') != None:
-                    Name_dictionary_to_return[seq_feature.qualifiers.get('gene')[0]] = seq_feature.qualifiers['translation'][0]
-                all_protein[len(all_protein)]=[seq_feature.qualifiers['translation'][0],seq_feature.location,seq_feature]
+                if type_to_return == "amino_acid":
+                    if 'db_xref' in seq_feature.qualifiers and any("GOA" in s for s in seq_feature.qualifiers['db_xref']):
+                        GOA_dictionary_to_return[seq_feature.qualifiers['db_xref'][2].split(":")[1]] = seq_feature.qualifiers['translation'][0]
+                    if seq_feature.qualifiers.get('gene') != None:
+                        Name_dictionary_to_return[seq_feature.qualifiers.get('gene')[0]] = seq_feature.qualifiers['translation'][0]
+                    all_protein[len(all_protein)]=[seq_feature.qualifiers['translation'][0],seq_feature.location,seq_feature]
+                else:
+                    temp_seq = seq_record.seq[seq_feature.location.start:seq_feature.location.end]
+                    dna = temp_seq if seq_feature.strand == 1 else temp_seq.reverse_complement()
+                    if 'db_xref' in seq_feature.qualifiers and any("GOA" in s for s in seq_feature.qualifiers['db_xref']):
+                        GOA_dictionary_to_return[seq_feature.qualifiers['db_xref'][2].split(":")[1]] = dna
+                    if seq_feature.qualifiers.get('gene') != None:
+                        Name_dictionary_to_return[seq_feature.qualifiers.get('gene')[0]] = dna
+                    all_protein[len(all_protein)]=[seq_feature.qualifiers['translation'][0],seq_feature.location,seq_feature]
+
+
 
     print("len of full CDS GB records = " + str(count_entry))
     return GOA_dictionary_to_return,Name_dictionary_to_return,all_protein
@@ -136,7 +148,7 @@ def get_GC_and_len_statistic(dic,GC_count,global_len):
             "avg": dic_count_GC_avg,
             "median": dic_count_GC_median,
             "min": dic_count_GC_min,
-            "max": dic_count_GC_min
+            "max": dic_count_GC_max
         },
         "lens": lens,
         "list_GC_count": list_GC_count,

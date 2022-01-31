@@ -310,6 +310,3 @@ def main_a():
     t.printSection("a", "4")
 
     sanityChecks(features, DNA_seq)
-
-
-main_a()
