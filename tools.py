@@ -60,7 +60,7 @@ def get_dictionary_of_protain_from_GB_file(file_path, type_to_return = "amino_ac
     Name_dictionary_to_return = {}
     all_protein = {}
     for seq_record in SeqIO.parse(input_handle, "genbank"):
-        print("Dealing with GenBank record %s" % seq_record.id)
+        #print("Dealing with GenBank record %s" % seq_record.id)
         for seq_feature in seq_record.features :
             if seq_feature.type == "CDS":
                 assert len(seq_feature.qualifiers['translation']) == 1
@@ -82,7 +82,7 @@ def get_dictionary_of_protain_from_GB_file(file_path, type_to_return = "amino_ac
 
 
 
-    print("len of full CDS GB records = " + str(count_entry))
+    #print("len of full CDS GB records = " + str(count_entry))
     return GOA_dictionary_to_return,Name_dictionary_to_return,all_protein
 
 def get_transmembrane_from_UniProt_file(fasta_path):
