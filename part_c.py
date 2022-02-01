@@ -110,12 +110,16 @@ def countSynonymsAt(kodon):
 
     return count*3/getN(kodon)
 
-def countSynonyms(DATA):# return fs*3/n => synonyms count
+def countSynonyms():# return fs*3/n => synonyms count
     dic={}
-    print(len(DATA))
-    for i in range(int(len(DATA)/3)):
-        # check each unit how many Synonyms he has
-        dic[i]=countSynonymsAt(DATA[3*i:3*i+3])
+    kodon="AAA"
+    for i in range(4):
+        for j in range(4):
+            for k in range(4):
+                dic[kodon]=countSynonymsAt(kodon)
+                kodon=kodon[0:2]+nextLatter[kodon[2]]
+            kodon=kodon[0] +nextLatter[kodon[1]]+kodon[2]
+        kodon= nextLatter[kodon[0]]+kodon[1:3]
     return dic
 
 #.........................................................................................#
@@ -202,7 +206,7 @@ def main_c():
 
 
     #     A      ----->
-    dic=countSynonyms(get_sequence(data_corona))
+    dic=countSynonyms()
     pprint.pprint(dic)
 
 
@@ -257,4 +261,4 @@ def main_c():
     print(tabulate(toPrint, headers=['gene', 'locus_tag','protein_id','product','type','dN','dS','dN_dS_ratio','prefences'], tablefmt='orgtbl'))# print the information table
 
 
-
+main_c()
