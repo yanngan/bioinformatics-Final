@@ -198,16 +198,30 @@ def compareOrganizm(genA,genB):# count how many proteins are equal
 #.........................................................................................#
 #-----------------------------------------------------------------------------------------#
 def main_c():
+    print()
+
     #load files
     data_corona=open_GB("corona_2020.gb")
     data_corona_recent=open_GB("corona_2022.gb")
 
 
 
-
     #     A      ----->
     dic=countSynonyms()
-    pprint.pprint(dic)
+    count =0
+    for sub_dict  in dic.keys():
+        spaces=""
+        num=str(round(float(dic[sub_dict]), 3))
+        for i in range(5-len(num)):
+            spaces=spaces+" "
+        print(sub_dict+":"+num,end=spaces+"       ")
+        count+=1
+        if(count==4):
+            count=0
+            print()
+
+
+
 
 
 
