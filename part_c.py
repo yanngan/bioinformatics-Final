@@ -237,9 +237,9 @@ def main_c():
     print("same genes overall:",equalSum)
     if unequalSum==0:
         if equalSum!=count_of_equal_genes:
-            print("both have the same genes, some protains are diffrent")
+            print("both have the same genes, some proteins are different")
         else:
-            print("both have the same exacaly gene's")
+            print("both have the same exactly gene's")
     else:
         print("the amount of unequal genes:",unequalSum)
 
